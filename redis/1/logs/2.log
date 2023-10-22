@@ -1,0 +1,798 @@
+karuppiah@Karuppiahs-MacBook-Pro redis-1 % redis-server redis-server.conf 
+39383:C 22 Oct 2023 17:55:26.734 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+39383:C 22 Oct 2023 17:55:26.734 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+39383:C 22 Oct 2023 17:55:26.734 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=39383, just started
+39383:C 22 Oct 2023 17:55:26.734 * Configuration loaded
+39383:M 22 Oct 2023 17:55:26.734 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+39383:M 22 Oct 2023 17:55:26.734 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 39383
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+39383:M 22 Oct 2023 17:55:26.735 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+39383:M 22 Oct 2023 17:55:26.735 * No cluster configuration found, I'm c24fbd95fe51830b77a73beef1f96079fb4340d6
+39383:M 22 Oct 2023 17:55:26.775 * Server initialized
+39383:M 22 Oct 2023 17:55:26.776 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+39383:M 22 Oct 2023 17:55:26.830 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+39383:M 22 Oct 2023 17:55:26.831 * Ready to accept connections tcp
+39383:M 22 Oct 2023 18:00:59.624 * configEpoch set to 1 via CLUSTER SET-CONFIG-EPOCH
+39383:M 22 Oct 2023 18:00:59.652 * IP address for this node updated to 127.0.0.1
+39383:M 22 Oct 2023 18:01:01.701 * Replica 127.0.0.1:6382 asks for synchronization
+39383:M 22 Oct 2023 18:01:01.701 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '9f742656cb2af5cdee9edeb1ad7b810148ce329d', my replication IDs are 'db3a9b946984e75097b768009791bd354dc86935' and '0000000000000000000000000000000000000000')
+39383:M 22 Oct 2023 18:01:01.701 * Replication backlog created, my new replication IDs are 'df44b1b59aa98167817343fd0dd37edff31c0841' and '0000000000000000000000000000000000000000'
+39383:M 22 Oct 2023 18:01:01.701 * Delay next BGSAVE for diskless SYNC
+39383:M 22 Oct 2023 18:01:04.623 * Cluster state changed: ok
+39383:M 22 Oct 2023 18:01:06.369 * Starting BGSAVE for SYNC with target: replicas sockets
+39383:M 22 Oct 2023 18:01:06.370 * Background RDB transfer started by pid 40651
+40651:C 22 Oct 2023 18:01:06.370 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+39383:M 22 Oct 2023 18:01:06.371 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+39383:M 22 Oct 2023 18:01:06.411 * Background RDB transfer terminated with success
+39383:M 22 Oct 2023 18:01:06.411 * Streamed RDB transfer with replica 127.0.0.1:6382 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+39383:M 22 Oct 2023 18:01:06.411 * Synchronization with replica 127.0.0.1:6382 succeeded
+39383:M 22 Oct 2023 18:02:19.242 * FAIL message received from bf7276cbf67275148a705245174c0273c584b549 () about 01b4a30df7dece90c3799b2800055dad660160e4 ()
+39383:M 22 Oct 2023 18:02:24.402 * Connection with replica 127.0.0.1:6382 lost.
+^C39383:signal-handler (1697977949) Received SIGINT scheduling shutdown...
+39383:M 22 Oct 2023 18:02:29.857 * User requested shutdown...
+39383:M 22 Oct 2023 18:02:29.857 * Calling fsync() on the AOF file.
+39383:M 22 Oct 2023 18:02:29.877 * Saving the final RDB snapshot before exiting.
+39383:M 22 Oct 2023 18:02:29.897 * DB saved on disk
+39383:M 22 Oct 2023 18:02:29.897 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-1 % 
+karuppiah@Karuppiahs-MacBook-Pro redis-2 % redis-server redis-server.conf 
+39618:C 22 Oct 2023 17:55:46.271 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+39618:C 22 Oct 2023 17:55:46.271 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+39618:C 22 Oct 2023 17:55:46.271 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=39618, just started
+39618:C 22 Oct 2023 17:55:46.271 * Configuration loaded
+39618:M 22 Oct 2023 17:55:46.272 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+39618:M 22 Oct 2023 17:55:46.272 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 39618
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+39618:M 22 Oct 2023 17:55:46.272 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+39618:M 22 Oct 2023 17:55:46.272 * No cluster configuration found, I'm 71510372f21dfb5020ca4369648c1cc5eca6b1e7
+39618:M 22 Oct 2023 17:55:46.313 * Server initialized
+39618:M 22 Oct 2023 17:55:46.313 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+39618:M 22 Oct 2023 17:55:46.352 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+39618:M 22 Oct 2023 17:55:46.352 * Ready to accept connections tcp
+39618:M 22 Oct 2023 18:00:59.625 * configEpoch set to 2 via CLUSTER SET-CONFIG-EPOCH
+39618:M 22 Oct 2023 18:00:59.702 * IP address for this node updated to 127.0.0.1
+39618:M 22 Oct 2023 18:01:01.702 * Replica 127.0.0.1:6383 asks for synchronization
+39618:M 22 Oct 2023 18:01:01.702 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '7ea33bb0d5b49e7243281b54dd69b2d1246ea219', my replication IDs are '13aaacac31fcdbd3eb6b2cf02551eed066601bab' and '0000000000000000000000000000000000000000')
+39618:M 22 Oct 2023 18:01:01.702 * Replication backlog created, my new replication IDs are 'e71504fc5da8ca836a0c941aa5c33891e09a6199' and '0000000000000000000000000000000000000000'
+39618:M 22 Oct 2023 18:01:01.702 * Delay next BGSAVE for diskless SYNC
+39618:M 22 Oct 2023 18:01:04.599 * Cluster state changed: ok
+39618:M 22 Oct 2023 18:01:06.517 * Starting BGSAVE for SYNC with target: replicas sockets
+39618:M 22 Oct 2023 18:01:06.517 * Background RDB transfer started by pid 40653
+40653:C 22 Oct 2023 18:01:06.518 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+39618:M 22 Oct 2023 18:01:06.518 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+39618:M 22 Oct 2023 18:01:06.596 * Background RDB transfer terminated with success
+39618:M 22 Oct 2023 18:01:06.596 * Streamed RDB transfer with replica 127.0.0.1:6383 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+39618:M 22 Oct 2023 18:01:06.596 * Synchronization with replica 127.0.0.1:6383 succeeded
+39618:M 22 Oct 2023 18:02:19.242 * FAIL message received from bf7276cbf67275148a705245174c0273c584b549 () about 01b4a30df7dece90c3799b2800055dad660160e4 ()
+39618:M 22 Oct 2023 18:02:23.079 * Connection with replica 127.0.0.1:6383 lost.
+^C39618:signal-handler (1697977948) Received SIGINT scheduling shutdown...
+39618:M 22 Oct 2023 18:02:28.522 * User requested shutdown...
+39618:M 22 Oct 2023 18:02:28.522 * Calling fsync() on the AOF file.
+39618:M 22 Oct 2023 18:02:28.541 * Saving the final RDB snapshot before exiting.
+39618:M 22 Oct 2023 18:02:28.561 * DB saved on disk
+39618:M 22 Oct 2023 18:02:28.561 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-2 % 
+Last login: Sun Oct 22 17:55:33 on ttys004
+redis-server redis-server.conf %                                                                                      karuppiah@Karuppiahs-MacBook-Pro redis-2 % cd ../redis-3                  
+karuppiah@Karuppiahs-MacBook-Pro redis-3 % redis-server redis-server.conf 
+39844:C 22 Oct 2023 17:55:54.520 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+39844:C 22 Oct 2023 17:55:54.520 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+39844:C 22 Oct 2023 17:55:54.520 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=39844, just started
+39844:C 22 Oct 2023 17:55:54.520 * Configuration loaded
+39844:M 22 Oct 2023 17:55:54.521 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+39844:M 22 Oct 2023 17:55:54.521 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6381
+ |    `-._   `._    /     _.-'    |     PID: 39844
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+39844:M 22 Oct 2023 17:55:54.521 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+39844:M 22 Oct 2023 17:55:54.521 * No cluster configuration found, I'm e2ba0747172bf752901d554772fd68e34798a2af
+39844:M 22 Oct 2023 17:55:54.560 * Server initialized
+39844:M 22 Oct 2023 17:55:54.562 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+39844:M 22 Oct 2023 17:55:54.601 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+39844:M 22 Oct 2023 17:55:54.601 * Ready to accept connections tcp
+39844:M 22 Oct 2023 18:00:59.625 * configEpoch set to 3 via CLUSTER SET-CONFIG-EPOCH
+39844:M 22 Oct 2023 18:00:59.701 * IP address for this node updated to 127.0.0.1
+39844:M 22 Oct 2023 18:01:01.702 * Replica 127.0.0.1:6384 asks for synchronization
+39844:M 22 Oct 2023 18:01:01.702 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '13b0d774540b27fcfd373bea001a7e6854240ce1', my replication IDs are '848e86b3075e48099ad09d218bfd8d156e1c4f65' and '0000000000000000000000000000000000000000')
+39844:M 22 Oct 2023 18:01:01.702 * Replication backlog created, my new replication IDs are '7c438fd10ffcd366201d2de8ce5563a1ff3d79af' and '0000000000000000000000000000000000000000'
+39844:M 22 Oct 2023 18:01:01.702 * Delay next BGSAVE for diskless SYNC
+39844:M 22 Oct 2023 18:01:04.584 * Cluster state changed: ok
+39844:M 22 Oct 2023 18:01:06.734 * Starting BGSAVE for SYNC with target: replicas sockets
+39844:M 22 Oct 2023 18:01:06.735 * Background RDB transfer started by pid 40655
+40655:C 22 Oct 2023 18:01:06.735 * Fork CoW for RDB: current 0 MB, peak 0 MB, average 0 MB
+39844:M 22 Oct 2023 18:01:06.736 * Diskless rdb transfer, done reading from pipe, 1 replicas still up.
+39844:M 22 Oct 2023 18:01:06.798 * Background RDB transfer terminated with success
+39844:M 22 Oct 2023 18:01:06.798 * Streamed RDB transfer with replica 127.0.0.1:6384 succeeded (socket). Waiting for REPLCONF ACK from replica to enable streaming
+39844:M 22 Oct 2023 18:01:06.798 * Synchronization with replica 127.0.0.1:6384 succeeded
+39844:M 22 Oct 2023 18:02:12.546 * Connection with replica 127.0.0.1:6384 lost.
+39844:M 22 Oct 2023 18:02:19.242 * FAIL message received from bf7276cbf67275148a705245174c0273c584b549 () about 01b4a30df7dece90c3799b2800055dad660160e4 ()
+^C39844:signal-handler (1697977945) Received SIGINT scheduling shutdown...
+39844:M 22 Oct 2023 18:02:25.502 * User requested shutdown...
+39844:M 22 Oct 2023 18:02:25.502 * Calling fsync() on the AOF file.
+39844:M 22 Oct 2023 18:02:25.521 * Saving the final RDB snapshot before exiting.
+39844:M 22 Oct 2023 18:02:25.540 * DB saved on disk
+39844:M 22 Oct 2023 18:02:25.540 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-3 %      
+Last login: Sun Oct 22 17:55:47 on ttys006
+karuppiah@Karuppiahs-MacBook-Pro redis-3 % cd ../redis-4 
+karuppiah@Karuppiahs-MacBook-Pro redis-4 % redis-server redis-server.conf 
+40071:C 22 Oct 2023 17:55:59.311 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+40071:C 22 Oct 2023 17:55:59.311 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+40071:C 22 Oct 2023 17:55:59.311 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=40071, just started
+40071:C 22 Oct 2023 17:55:59.311 * Configuration loaded
+40071:M 22 Oct 2023 17:55:59.312 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+40071:M 22 Oct 2023 17:55:59.312 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6382
+ |    `-._   `._    /     _.-'    |     PID: 40071
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+40071:M 22 Oct 2023 17:55:59.312 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+40071:M 22 Oct 2023 17:55:59.313 * No cluster configuration found, I'm bf7276cbf67275148a705245174c0273c584b549
+40071:M 22 Oct 2023 17:55:59.352 * Server initialized
+40071:M 22 Oct 2023 17:55:59.353 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+40071:M 22 Oct 2023 17:55:59.391 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+40071:M 22 Oct 2023 17:55:59.391 * Ready to accept connections tcp
+40071:M 22 Oct 2023 18:00:59.626 * configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+40071:M 22 Oct 2023 18:00:59.702 * IP address for this node updated to 127.0.0.1
+40071:S 22 Oct 2023 18:01:01.700 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+40071:S 22 Oct 2023 18:01:01.700 * Connecting to MASTER 127.0.0.1:6379
+40071:S 22 Oct 2023 18:01:01.700 * MASTER <-> REPLICA sync started
+40071:S 22 Oct 2023 18:01:01.700 * Cluster state changed: ok
+40071:S 22 Oct 2023 18:01:01.701 * Non blocking connect for SYNC fired the event.
+40071:S 22 Oct 2023 18:01:01.701 * Master replied to PING, replication can continue...
+40071:S 22 Oct 2023 18:01:01.701 * Trying a partial resynchronization (request 9f742656cb2af5cdee9edeb1ad7b810148ce329d:1).
+40071:S 22 Oct 2023 18:01:06.369 * Full resync from master: df44b1b59aa98167817343fd0dd37edff31c0841:14
+40071:S 22 Oct 2023 18:01:06.370 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+40071:S 22 Oct 2023 18:01:06.390 * Discarding previously cached master state.
+40071:S 22 Oct 2023 18:01:06.390 * MASTER <-> REPLICA sync: Flushing old data
+40071:S 22 Oct 2023 18:01:06.390 * MASTER <-> REPLICA sync: Loading DB in memory
+40071:S 22 Oct 2023 18:01:06.410 * Loading RDB produced by version 7.2.1
+40071:S 22 Oct 2023 18:01:06.410 * RDB age 0 seconds
+40071:S 22 Oct 2023 18:01:06.410 * RDB memory usage when created 1.60 Mb
+40071:S 22 Oct 2023 18:01:06.410 * Done loading RDB, keys loaded: 0, keys expired: 0.
+40071:S 22 Oct 2023 18:01:06.410 * MASTER <-> REPLICA sync: Finished with success
+40071:S 22 Oct 2023 18:01:06.411 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+40071:S 22 Oct 2023 18:01:06.411 * Background append only file rewriting started by pid 40652
+40652:C 22 Oct 2023 18:01:06.412 * Successfully created the temporary AOF base file temp-rewriteaof-bg-40652.aof
+40652:C 22 Oct 2023 18:01:06.412 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+40071:S 22 Oct 2023 18:01:06.515 * Background AOF rewrite terminated with success
+40071:S 22 Oct 2023 18:01:06.515 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-40652.aof into appendonly.aof.2.base.rdb
+40071:S 22 Oct 2023 18:01:06.515 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+40071:S 22 Oct 2023 18:01:06.575 * Removing the history file appendonly.aof.1.incr.aof in the background
+40071:S 22 Oct 2023 18:01:06.575 * Removing the history file appendonly.aof.1.base.rdb in the background
+40071:S 22 Oct 2023 18:01:06.632 * Background AOF rewrite finished successfully
+40071:S 22 Oct 2023 18:02:19.241 * Marking node 01b4a30df7dece90c3799b2800055dad660160e4 () as failing (quorum reached).
+^C40071:signal-handler (1697977944) Received SIGINT scheduling shutdown...
+40071:S 22 Oct 2023 18:02:24.362 * User requested shutdown...
+40071:S 22 Oct 2023 18:02:24.362 * Calling fsync() on the AOF file.
+40071:S 22 Oct 2023 18:02:24.382 * Saving the final RDB snapshot before exiting.
+40071:S 22 Oct 2023 18:02:24.401 * DB saved on disk
+40071:S 22 Oct 2023 18:02:24.401 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-4 % 
+Last login: Sun Oct 22 17:55:55 on ttys008
+karuppiah@Karuppiahs-MacBook-Pro redis-4 % redis-server redis-server.conf 
+40293:C 22 Oct 2023 17:56:05.459 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+40293:C 22 Oct 2023 17:56:05.459 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+40293:C 22 Oct 2023 17:56:05.459 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=40293, just started
+40293:C 22 Oct 2023 17:56:05.459 * Configuration loaded
+40293:M 22 Oct 2023 17:56:05.459 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+40293:M 22 Oct 2023 17:56:05.459 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6382
+ |    `-._   `._    /     _.-'    |     PID: 40293
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+40293:M 22 Oct 2023 17:56:05.460 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+40293:M 22 Oct 2023 17:56:05.460 * Node configuration loaded, I'm bf7276cbf67275148a705245174c0273c584b549
+40293:M 22 Oct 2023 17:56:05.461 # Warning: Could not create server TCP listening socket *:6382: bind: Address already in use
+40293:M 22 Oct 2023 17:56:05.461 # Failed listening on port 6382 (tcp), aborting.
+karuppiah@Karuppiahs-MacBook-Pro redis-4 % echo $?
+1
+karuppiah@Karuppiahs-MacBook-Pro redis-4 % cd ..
+karuppiah@Karuppiahs-MacBook-Pro redis-cluster-local % cd redis-5
+karuppiah@Karuppiahs-MacBook-Pro redis-5 % redis-server redis-server.conf 
+40296:C 22 Oct 2023 17:56:22.254 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+40296:C 22 Oct 2023 17:56:22.254 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+40296:C 22 Oct 2023 17:56:22.254 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=40296, just started
+40296:C 22 Oct 2023 17:56:22.254 * Configuration loaded
+40296:M 22 Oct 2023 17:56:22.255 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+40296:M 22 Oct 2023 17:56:22.255 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6383
+ |    `-._   `._    /     _.-'    |     PID: 40296
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+40296:M 22 Oct 2023 17:56:22.255 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+40296:M 22 Oct 2023 17:56:22.255 * No cluster configuration found, I'm 45c95e51e2b1690c42bce08f88ef08d69deedc0d
+40296:M 22 Oct 2023 17:56:22.295 * Server initialized
+40296:M 22 Oct 2023 17:56:22.296 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+40296:M 22 Oct 2023 17:56:22.334 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+40296:M 22 Oct 2023 17:56:22.334 * Ready to accept connections tcp
+40296:M 22 Oct 2023 18:00:59.627 * configEpoch set to 5 via CLUSTER SET-CONFIG-EPOCH
+40296:M 22 Oct 2023 18:00:59.838 * IP address for this node updated to 127.0.0.1
+40296:S 22 Oct 2023 18:01:01.701 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+40296:S 22 Oct 2023 18:01:01.701 * Connecting to MASTER 127.0.0.1:6380
+40296:S 22 Oct 2023 18:01:01.701 * MASTER <-> REPLICA sync started
+40296:S 22 Oct 2023 18:01:01.701 * Cluster state changed: ok
+40296:S 22 Oct 2023 18:01:01.702 * Non blocking connect for SYNC fired the event.
+40296:S 22 Oct 2023 18:01:01.702 * Master replied to PING, replication can continue...
+40296:S 22 Oct 2023 18:01:01.702 * Trying a partial resynchronization (request 7ea33bb0d5b49e7243281b54dd69b2d1246ea219:1).
+40296:S 22 Oct 2023 18:01:06.517 * Full resync from master: e71504fc5da8ca836a0c941aa5c33891e09a6199:14
+40296:S 22 Oct 2023 18:01:06.518 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+40296:S 22 Oct 2023 18:01:06.556 * Discarding previously cached master state.
+40296:S 22 Oct 2023 18:01:06.556 * MASTER <-> REPLICA sync: Flushing old data
+40296:S 22 Oct 2023 18:01:06.556 * MASTER <-> REPLICA sync: Loading DB in memory
+40296:S 22 Oct 2023 18:01:06.594 * Loading RDB produced by version 7.2.1
+40296:S 22 Oct 2023 18:01:06.594 * RDB age 0 seconds
+40296:S 22 Oct 2023 18:01:06.595 * RDB memory usage when created 1.60 Mb
+40296:S 22 Oct 2023 18:01:06.595 * Done loading RDB, keys loaded: 0, keys expired: 0.
+40296:S 22 Oct 2023 18:01:06.595 * MASTER <-> REPLICA sync: Finished with success
+40296:S 22 Oct 2023 18:01:06.595 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+40296:S 22 Oct 2023 18:01:06.595 * Background append only file rewriting started by pid 40654
+40654:C 22 Oct 2023 18:01:06.614 * Successfully created the temporary AOF base file temp-rewriteaof-bg-40654.aof
+40654:C 22 Oct 2023 18:01:06.615 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+40296:S 22 Oct 2023 18:01:06.699 * Background AOF rewrite terminated with success
+40296:S 22 Oct 2023 18:01:06.699 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-40654.aof into appendonly.aof.2.base.rdb
+40296:S 22 Oct 2023 18:01:06.699 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+40296:S 22 Oct 2023 18:01:06.738 * Removing the history file appendonly.aof.1.incr.aof in the background
+40296:S 22 Oct 2023 18:01:06.738 * Removing the history file appendonly.aof.1.base.rdb in the background
+40296:S 22 Oct 2023 18:01:06.815 * Background AOF rewrite finished successfully
+40296:S 22 Oct 2023 18:02:19.242 * FAIL message received from bf7276cbf67275148a705245174c0273c584b549 () about 01b4a30df7dece90c3799b2800055dad660160e4 ()
+^C40296:signal-handler (1697977942) Received SIGINT scheduling shutdown...
+40296:S 22 Oct 2023 18:02:23.039 * User requested shutdown...
+40296:S 22 Oct 2023 18:02:23.039 * Calling fsync() on the AOF file.
+40296:S 22 Oct 2023 18:02:23.057 * Saving the final RDB snapshot before exiting.
+40296:S 22 Oct 2023 18:02:23.077 * DB saved on disk
+40296:S 22 Oct 2023 18:02:23.077 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-5 % 
+Last login: Sun Oct 22 17:56:03 on ttys009
+karuppiah@Karuppiahs-MacBook-Pro redis-5 % cd ../redis-6 
+karuppiah@Karuppiahs-MacBook-Pro redis-6 % redis-server redis-server.conf 
+40589:C 22 Oct 2023 17:59:28.653 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+40589:C 22 Oct 2023 17:59:28.653 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+40589:C 22 Oct 2023 17:59:28.653 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=40589, just started
+40589:C 22 Oct 2023 17:59:28.653 * Configuration loaded
+40589:M 22 Oct 2023 17:59:28.654 * Increased maximum number of open files to 10032 (it was originally set to 2560).
+40589:M 22 Oct 2023 17:59:28.654 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 7.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6384
+ |    `-._   `._    /     _.-'    |     PID: 40589
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+40589:M 22 Oct 2023 17:59:28.654 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
+40589:M 22 Oct 2023 17:59:28.654 * No cluster configuration found, I'm 01b4a30df7dece90c3799b2800055dad660160e4
+40589:M 22 Oct 2023 17:59:28.694 * Server initialized
+40589:M 22 Oct 2023 17:59:28.694 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+40589:M 22 Oct 2023 17:59:28.734 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+40589:M 22 Oct 2023 17:59:28.734 * Ready to accept connections tcp
+40589:M 22 Oct 2023 18:00:59.627 * configEpoch set to 6 via CLUSTER SET-CONFIG-EPOCH
+40589:M 22 Oct 2023 18:00:59.838 * IP address for this node updated to 127.0.0.1
+40589:S 22 Oct 2023 18:01:01.702 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+40589:S 22 Oct 2023 18:01:01.702 * Connecting to MASTER 127.0.0.1:6381
+40589:S 22 Oct 2023 18:01:01.702 * MASTER <-> REPLICA sync started
+40589:S 22 Oct 2023 18:01:01.702 * Cluster state changed: ok
+40589:S 22 Oct 2023 18:01:01.702 * Non blocking connect for SYNC fired the event.
+40589:S 22 Oct 2023 18:01:01.702 * Master replied to PING, replication can continue...
+40589:S 22 Oct 2023 18:01:01.702 * Trying a partial resynchronization (request 13b0d774540b27fcfd373bea001a7e6854240ce1:1).
+40589:S 22 Oct 2023 18:01:06.734 * Full resync from master: 7c438fd10ffcd366201d2de8ce5563a1ff3d79af:0
+40589:S 22 Oct 2023 18:01:06.738 * MASTER <-> REPLICA sync: receiving streamed RDB from master with EOF to disk
+40589:S 22 Oct 2023 18:01:06.758 * Discarding previously cached master state.
+40589:S 22 Oct 2023 18:01:06.758 * MASTER <-> REPLICA sync: Flushing old data
+40589:S 22 Oct 2023 18:01:06.758 * MASTER <-> REPLICA sync: Loading DB in memory
+40589:S 22 Oct 2023 18:01:06.797 * Loading RDB produced by version 7.2.1
+40589:S 22 Oct 2023 18:01:06.797 * RDB age 0 seconds
+40589:S 22 Oct 2023 18:01:06.797 * RDB memory usage when created 1.58 Mb
+40589:S 22 Oct 2023 18:01:06.797 * Done loading RDB, keys loaded: 0, keys expired: 0.
+40589:S 22 Oct 2023 18:01:06.797 * MASTER <-> REPLICA sync: Finished with success
+40589:S 22 Oct 2023 18:01:06.797 * Creating AOF incr file temp-appendonly.aof.incr on background rewrite
+40589:S 22 Oct 2023 18:01:06.798 * Background append only file rewriting started by pid 40656
+40656:C 22 Oct 2023 18:01:06.816 * Successfully created the temporary AOF base file temp-rewriteaof-bg-40656.aof
+40656:C 22 Oct 2023 18:01:06.816 * Fork CoW for AOF rewrite: current 0 MB, peak 0 MB, average 0 MB
+40589:S 22 Oct 2023 18:01:06.899 * Background AOF rewrite terminated with success
+40589:S 22 Oct 2023 18:01:06.899 * Successfully renamed the temporary AOF base file temp-rewriteaof-bg-40656.aof into appendonly.aof.2.base.rdb
+40589:S 22 Oct 2023 18:01:06.899 * Successfully renamed the temporary AOF incr file temp-appendonly.aof.incr into appendonly.aof.2.incr.aof
+40589:S 22 Oct 2023 18:01:06.938 * Removing the history file appendonly.aof.1.incr.aof in the background
+40589:S 22 Oct 2023 18:01:06.938 * Removing the history file appendonly.aof.1.base.rdb in the background
+40589:S 22 Oct 2023 18:01:06.976 * Background AOF rewrite finished successfully
+^C40589:signal-handler (1697977932) Received SIGINT scheduling shutdown...
+40589:S 22 Oct 2023 18:02:12.525 * User requested shutdown...
+40589:S 22 Oct 2023 18:02:12.525 * Calling fsync() on the AOF file.
+40589:S 22 Oct 2023 18:02:12.525 * Saving the final RDB snapshot before exiting.
+40589:S 22 Oct 2023 18:02:12.545 * DB saved on disk
+40589:S 22 Oct 2023 18:02:12.545 # Redis is now ready to exit, bye bye...
+karuppiah@Karuppiahs-MacBook-Pro redis-6 % gst
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../../logs/2.log
+	../
+
+nothing added to commit but untracked files present (use "git add" to track)
+karuppiah@Karuppiahs-MacBook-Pro redis-6 % ls
+appendonlydir     dump.rdb          nodes.conf        redis-server.conf
+karuppiah@Karuppiahs-MacBook-Pro redis-6 % 
+
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli
+127.0.0.1:6379> cluster info
+cluster_state:fail
+cluster_slots_assigned:0
+cluster_slots_ok:0
+cluster_slots_pfail:0
+cluster_slots_fail:0
+cluster_known_nodes:1
+cluster_size:0
+cluster_current_epoch:0
+cluster_my_epoch:0
+cluster_stats_messages_sent:0
+cluster_stats_messages_received:0
+total_cluster_links_buffer_limit_exceeded:0
+127.0.0.1:6379> 
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli
+127.0.0.1:6379> info
+# Server
+redis_version:7.2.1
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:7b8617dd94058f85
+redis_mode:cluster
+os:Darwin 23.0.0 x86_64
+arch_bits:64
+monotonic_clock:POSIX clock_gettime
+multiplexing_api:select
+atomicvar_api:c11-builtin
+gcc_version:4.2.1
+process_id:39383
+process_supervised:no
+run_id:48401fa8bd5d63dc281c0864cb0b4b97f50eb0c6
+tcp_port:6379
+server_time_usec:1697977596059883
+uptime_in_seconds:70
+uptime_in_days:0
+hz:10
+configured_hz:10
+lru_clock:3478779
+executable:/Users/karuppiah/projects/github.com/karuppiah7890/questions/redis/1/redis-cluster-local/redis-1/redis-server
+config_file:/Users/karuppiah/projects/github.com/karuppiah7890/questions/redis/1/redis-cluster-local/redis-1/redis-server.conf
+io_threads_active:0
+listener0:name=tcp,bind=*,bind=-::*,port=6379
+
+# Clients
+connected_clients:1
+cluster_connections:0
+maxclients:10000
+client_recent_max_input_buffer:16896
+client_recent_max_output_buffer:0
+blocked_clients:0
+tracking_clients:0
+clients_in_timeout_table:0
+total_blocking_keys:0
+total_blocking_keys_on_nokey:0
+
+# Memory
+used_memory:1479600
+used_memory_human:1.41M
+used_memory_rss:5607424
+used_memory_rss_human:5.35M
+used_memory_peak:1695360
+used_memory_peak_human:1.62M
+used_memory_peak_perc:87.27%
+used_memory_overhead:1426824
+used_memory_startup:1407888
+used_memory_dataset:52776
+used_memory_dataset_perc:73.59%
+allocator_allocated:1476784
+allocator_active:5575680
+allocator_resident:5575680
+total_system_memory:17179869184
+total_system_memory_human:16.00G
+used_memory_lua:31744
+used_memory_vm_eval:31744
+used_memory_lua_human:31.00K
+used_memory_scripts_eval:0
+number_of_cached_scripts:0
+number_of_functions:0
+number_of_libraries:0
+used_memory_vm_functions:32768
+used_memory_vm_total:64512
+used_memory_vm_total_human:63.00K
+used_memory_functions:216
+used_memory_scripts:216
+used_memory_scripts_human:216B
+maxmemory:0
+maxmemory_human:0B
+maxmemory_policy:noeviction
+allocator_frag_ratio:3.78
+allocator_frag_bytes:4098896
+allocator_rss_ratio:1.00
+allocator_rss_bytes:0
+rss_overhead_ratio:1.01
+rss_overhead_bytes:31744
+mem_fragmentation_ratio:3.80
+mem_fragmentation_bytes:4130640
+mem_not_counted_for_evict:16
+mem_replication_backlog:0
+mem_total_replication_buffers:0
+mem_clients_slaves:0
+mem_clients_normal:18704
+mem_cluster_links:0
+mem_aof_buffer:16
+mem_allocator:libc
+active_defrag_running:0
+lazyfree_pending_objects:0
+lazyfreed_objects:0
+
+# Persistence
+loading:0
+async_loading:0
+current_cow_peak:0
+current_cow_size:0
+current_cow_size_age:0
+current_fork_perc:0.00
+current_save_keys_processed:0
+current_save_keys_total:0
+rdb_changes_since_last_save:0
+rdb_bgsave_in_progress:0
+rdb_last_save_time:1697977526
+rdb_last_bgsave_status:ok
+rdb_last_bgsave_time_sec:-1
+rdb_current_bgsave_time_sec:-1
+rdb_saves:0
+rdb_last_cow_size:0
+rdb_last_load_keys_expired:0
+rdb_last_load_keys_loaded:0
+aof_enabled:1
+aof_rewrite_in_progress:0
+aof_rewrite_scheduled:0
+aof_last_rewrite_time_sec:-1
+aof_current_rewrite_time_sec:-1
+aof_last_bgrewrite_status:ok
+aof_rewrites:0
+aof_rewrites_consecutive_failures:0
+aof_last_write_status:ok
+aof_last_cow_size:0
+module_fork_in_progress:0
+module_fork_last_cow_size:0
+aof_current_size:0
+aof_base_size:0
+aof_pending_rewrite:0
+aof_buffer_length:0
+aof_pending_bio_fsync:0
+aof_delayed_fsync:0
+
+# Stats
+total_connections_received:2
+total_commands_processed:3
+instantaneous_ops_per_sec:0
+total_net_input_bytes:95
+total_net_output_bytes:409156
+total_net_repl_input_bytes:0
+total_net_repl_output_bytes:0
+instantaneous_input_kbps:0.02
+instantaneous_output_kbps:121.78
+instantaneous_input_repl_kbps:0.00
+instantaneous_output_repl_kbps:0.00
+rejected_connections:0
+sync_full:0
+sync_partial_ok:0
+sync_partial_err:0
+expired_keys:0
+expired_stale_perc:0.00
+expired_time_cap_reached_count:0
+expire_cycle_cpu_milliseconds:0
+evicted_keys:0
+evicted_clients:0
+total_eviction_exceeded_time:0
+current_eviction_exceeded_time:0
+keyspace_hits:0
+keyspace_misses:0
+pubsub_channels:0
+pubsub_patterns:0
+pubsubshard_channels:0
+latest_fork_usec:0
+total_forks:0
+migrate_cached_sockets:0
+slave_expires_tracked_keys:0
+active_defrag_hits:0
+active_defrag_misses:0
+active_defrag_key_hits:0
+active_defrag_key_misses:0
+total_active_defrag_time:0
+current_active_defrag_time:0
+tracking_total_keys:0
+tracking_total_items:0
+tracking_total_prefixes:0
+unexpected_error_replies:0
+total_error_replies:0
+dump_payload_sanitizations:0
+total_reads_processed:5
+total_writes_processed:9
+io_threaded_reads_processed:0
+io_threaded_writes_processed:0
+reply_buffer_shrinks:2
+reply_buffer_expands:0
+eventloop_cycles:692
+eventloop_duration_sum:27944
+eventloop_duration_cmd_sum:2094
+instantaneous_eventloop_cycles_per_sec:12
+instantaneous_eventloop_duration_usec:46
+acl_access_denied_auth:0
+acl_access_denied_cmd:0
+acl_access_denied_key:0
+acl_access_denied_channel:0
+
+# Replication
+role:master
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:db3a9b946984e75097b768009791bd354dc86935
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:0
+second_repl_offset:-1
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+
+# CPU
+used_cpu_sys:0.027402
+used_cpu_user:0.024727
+used_cpu_sys_children:0.000000
+used_cpu_user_children:0.000000
+
+# Modules
+
+# Errorstats
+
+# Cluster
+cluster_enabled:1
+
+# Keyspace
+127.0.0.1:6379> info replication
+# Replication
+role:master
+connected_slaves:0
+master_failover_state:no-failover
+master_replid:db3a9b946984e75097b768009791bd354dc86935
+master_replid2:0000000000000000000000000000000000000000
+master_repl_offset:0
+second_repl_offset:-1
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+127.0.0.1:6379> info cluster
+# Cluster
+cluster_enabled:1
+127.0.0.1:6379> 
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli --cluster create 127.0.0.1:6379 127.0.0.1:6380 127.0.0.1:6381 127.0.0.1:6382 127.0.0.1:6383 127.0.0.1:6384 --cluster-replicas 1
+Could not connect to Redis at 127.0.0.1:6384: Connection refused
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli --cluster create 127.0.0.1:6379 127.0.0.1:6380 127.0.0.1:6381 127.0.0.1:6382 127.0.0.1:6383 127.0.0.1:6384 --cluster-replicas 1
+>>> Performing hash slots allocation on 6 nodes...
+Master[0] -> Slots 0 - 5460
+Master[1] -> Slots 5461 - 10922
+Master[2] -> Slots 10923 - 16383
+Adding replica 127.0.0.1:6383 to 127.0.0.1:6379
+Adding replica 127.0.0.1:6384 to 127.0.0.1:6380
+Adding replica 127.0.0.1:6382 to 127.0.0.1:6381
+>>> Trying to optimize slaves allocation for anti-affinity
+[WARNING] Some slaves are in the same host as their master
+M: c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379
+   slots:[0-5460] (5461 slots) master
+M: 71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380
+   slots:[5461-10922] (5462 slots) master
+M: e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381
+   slots:[10923-16383] (5461 slots) master
+S: bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382
+   replicates 71510372f21dfb5020ca4369648c1cc5eca6b1e7
+S: 45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383
+   replicates e2ba0747172bf752901d554772fd68e34798a2af
+S: 01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384
+   replicates c24fbd95fe51830b77a73beef1f96079fb4340d6
+Can I set the above configuration? (type 'yes' to accept): ^C
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli --cluster create 127.0.0.1:6379 127.0.0.1:6380 127.0.0.1:6381 127.0.0.1:6382 127.0.0.1:6383 127.0.0.1:6384 --cluster-replicas 1
+>>> Performing hash slots allocation on 6 nodes...
+Master[0] -> Slots 0 - 5460
+Master[1] -> Slots 5461 - 10922
+Master[2] -> Slots 10923 - 16383
+Adding replica 127.0.0.1:6383 to 127.0.0.1:6379
+Adding replica 127.0.0.1:6384 to 127.0.0.1:6380
+Adding replica 127.0.0.1:6382 to 127.0.0.1:6381
+>>> Trying to optimize slaves allocation for anti-affinity
+[WARNING] Some slaves are in the same host as their master
+M: c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379
+   slots:[0-5460] (5461 slots) master
+M: 71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380
+   slots:[5461-10922] (5462 slots) master
+M: e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381
+   slots:[10923-16383] (5461 slots) master
+S: bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382
+   replicates 71510372f21dfb5020ca4369648c1cc5eca6b1e7
+S: 45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383
+   replicates e2ba0747172bf752901d554772fd68e34798a2af
+S: 01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384
+   replicates c24fbd95fe51830b77a73beef1f96079fb4340d6
+Can I set the above configuration? (type 'yes' to accept): y
+karuppiah@Karuppiahs-MacBook-Pro 1 % echo $?
+0
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli --cluster create 127.0.0.1:6379 127.0.0.1:6380 127.0.0.1:6381 127.0.0.1:6382 127.0.0.1:6383 127.0.0.1:6384 --cluster-replicas 1
+>>> Performing hash slots allocation on 6 nodes...
+Master[0] -> Slots 0 - 5460
+Master[1] -> Slots 5461 - 10922
+Master[2] -> Slots 10923 - 16383
+Adding replica 127.0.0.1:6383 to 127.0.0.1:6379
+Adding replica 127.0.0.1:6384 to 127.0.0.1:6380
+Adding replica 127.0.0.1:6382 to 127.0.0.1:6381
+>>> Trying to optimize slaves allocation for anti-affinity
+[WARNING] Some slaves are in the same host as their master
+M: c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379
+   slots:[0-5460] (5461 slots) master
+M: 71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380
+   slots:[5461-10922] (5462 slots) master
+M: e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381
+   slots:[10923-16383] (5461 slots) master
+S: bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382
+   replicates c24fbd95fe51830b77a73beef1f96079fb4340d6
+S: 45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383
+   replicates 71510372f21dfb5020ca4369648c1cc5eca6b1e7
+S: 01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384
+   replicates e2ba0747172bf752901d554772fd68e34798a2af
+Can I set the above configuration? (type 'yes' to accept): yes
+>>> Nodes configuration updated
+>>> Assign a different config epoch to each node
+>>> Sending CLUSTER MEET messages to join the cluster
+Waiting for the cluster to join
+.
+>>> Performing Cluster Check (using node 127.0.0.1:6379)
+M: c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379
+   slots:[0-5460] (5461 slots) master
+   1 additional replica(s)
+S: 01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384
+   slots: (0 slots) slave
+   replicates e2ba0747172bf752901d554772fd68e34798a2af
+M: e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381
+   slots:[10923-16383] (5461 slots) master
+   1 additional replica(s)
+S: 45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383
+   slots: (0 slots) slave
+   replicates 71510372f21dfb5020ca4369648c1cc5eca6b1e7
+S: bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382
+   slots: (0 slots) slave
+   replicates c24fbd95fe51830b77a73beef1f96079fb4340d6
+M: 71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380
+   slots:[5461-10922] (5462 slots) master
+   1 additional replica(s)
+[OK] All nodes agree about slots configuration.
+>>> Check for open slots...
+>>> Check slots coverage...
+[OK] All 16384 slots covered.
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % redis-cli
+127.0.0.1:6379> cluster info
+cluster_state:ok
+cluster_slots_assigned:16384
+cluster_slots_ok:16384
+cluster_slots_pfail:0
+cluster_slots_fail:0
+cluster_known_nodes:6
+cluster_size:3
+cluster_current_epoch:6
+cluster_my_epoch:1
+cluster_stats_messages_ping_sent:67
+cluster_stats_messages_pong_sent:71
+cluster_stats_messages_sent:138
+cluster_stats_messages_ping_received:66
+cluster_stats_messages_pong_received:67
+cluster_stats_messages_meet_received:5
+cluster_stats_messages_received:138
+total_cluster_links_buffer_limit_exceeded:0
+127.0.0.1:6379> CLUSTER NODES
+01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384@16384 slave e2ba0747172bf752901d554772fd68e34798a2af 0 1697977910990 3 connected
+e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381@16381 master - 0 1697977909548 3 connected 10923-16383
+c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379@16379 myself,master - 0 1697977909000 1 connected 0-5460
+45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383@16383 slave 71510372f21dfb5020ca4369648c1cc5eca6b1e7 0 1697977909000 2 connected
+bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382@16382 slave c24fbd95fe51830b77a73beef1f96079fb4340d6 0 1697977910476 1 connected
+71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380@16380 master - 0 1697977909446 2 connected 5461-10922
+127.0.0.1:6379> 
+karuppiah@Karuppiahs-MacBook-Pro 1 % 

@@ -1,0 +1,1625 @@
+karuppiah@Karuppiahs-MacBook-Pro 1 % stern redis-app
++ redis-app-0 › redis
++ redis-app-1 › redis
++ redis-app-2 › redis
++ redis-app-3 › redis
++ redis-app-4 › redis
++ redis-app-5 › redis
+redis-app-1 redis 1:C 22 Oct 2023 10:34:12.598 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-1 redis 1:C 22 Oct 2023 10:34:12.598 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-1 redis 1:C 22 Oct 2023 10:34:12.598 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-1 redis 1:C 22 Oct 2023 10:34:12.598 * Configuration loaded
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.599 * monotonic clock: POSIX clock_gettime
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.599 * Running mode=cluster, port=6379.
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.600 * No cluster configuration found, I'm 8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.605 * Server initialized
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.609 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.613 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-1 redis 1:M 22 Oct 2023 10:34:12.613 * Ready to accept connections tcp
+redis-app-4 redis 1:C 22 Oct 2023 10:34:25.609 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-4 redis 1:C 22 Oct 2023 10:34:25.609 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-4 redis 1:C 22 Oct 2023 10:34:25.609 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-4 redis 1:C 22 Oct 2023 10:34:25.609 * Configuration loaded
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.610 * monotonic clock: POSIX clock_gettime
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.610 * Running mode=cluster, port=6379.
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.611 * No cluster configuration found, I'm 3a8d29d57def105c64555e6a7d3c8e7e262d7ac2
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.622 * Server initialized
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.623 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.630 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-4 redis 1:M 22 Oct 2023 10:34:25.630 * Ready to accept connections tcp
+redis-app-3 redis 1:C 22 Oct 2023 10:34:20.845 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-3 redis 1:C 22 Oct 2023 10:34:20.845 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-3 redis 1:C 22 Oct 2023 10:34:20.845 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-3 redis 1:C 22 Oct 2023 10:34:20.845 * Configuration loaded
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.845 * monotonic clock: POSIX clock_gettime
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.846 * Running mode=cluster, port=6379.
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.847 * No cluster configuration found, I'm 9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.852 * Server initialized
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.853 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.856 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-3 redis 1:M 22 Oct 2023 10:34:20.856 * Ready to accept connections tcp
+redis-app-2 redis 1:C 22 Oct 2023 10:34:16.760 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-2 redis 1:C 22 Oct 2023 10:34:16.761 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-2 redis 1:C 22 Oct 2023 10:34:16.761 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-2 redis 1:C 22 Oct 2023 10:34:16.761 * Configuration loaded
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.763 * monotonic clock: POSIX clock_gettime
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.764 * Running mode=cluster, port=6379.
+redis-app-5 redis 1:C 22 Oct 2023 10:34:29.367 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-5 redis 1:C 22 Oct 2023 10:34:29.367 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.765 * No cluster configuration found, I'm 17660df0a09adde4d3204959f0552d70edb848c1
+redis-app-5 redis 1:C 22 Oct 2023 10:34:29.367 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.769 * Server initialized
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.770 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-0 redis 1:C 22 Oct 2023 10:34:08.911 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+redis-app-5 redis 1:C 22 Oct 2023 10:34:29.367 * Configuration loaded
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.772 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-0 redis 1:C 22 Oct 2023 10:34:08.912 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.369 * monotonic clock: POSIX clock_gettime
+redis-app-2 redis 1:M 22 Oct 2023 10:34:16.772 * Ready to accept connections tcp
+redis-app-0 redis 1:C 22 Oct 2023 10:34:08.913 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.370 * Running mode=cluster, port=6379.
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.371 * No cluster configuration found, I'm 326f9761a0176093ff3a43521a92425fe8dfb48b
+redis-app-0 redis 1:C 22 Oct 2023 10:34:08.913 * Configuration loaded
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.913 * monotonic clock: POSIX clock_gettime
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.373 * Server initialized
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.387 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.913 * Running mode=cluster, port=6379.
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.916 * No cluster configuration found, I'm 8e93850c4e1316d4e95efb641b2e9a1bfda32c1f
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.391 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.921 * Server initialized
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.922 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+redis-app-5 redis 1:M 22 Oct 2023 10:34:29.391 * Ready to accept connections tcp
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.932 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+redis-app-0 redis 1:M 22 Oct 2023 10:34:08.932 * Ready to accept connections tcp
+
+
+^C
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-0 -- redis-cli cluster nodes
+8e93850c4e1316d4e95efb641b2e9a1bfda32c1f  10.244.0.4:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-1 -- redis-cli cluster nodes
+8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c  10.244.0.5:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-2 -- redis-cli cluster nodes
+17660df0a09adde4d3204959f0552d70edb848c1  10.244.0.6:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-3 -- redis-cli cluster nodes
+9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe  10.244.0.7:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-4 -- redis-cli cluster nodes
+3a8d29d57def105c64555e6a7d3c8e7e262d7ac2  10.244.0.8:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli cluster nodes
+326f9761a0176093ff3a43521a92425fe8dfb48b  10.244.0.9:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pod -o wide
+NAME          READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
+redis-app-0   1/1     Running   0          2m40s   10.244.0.4   minikube   <none>           <none>
+redis-app-1   1/1     Running   0          2m21s   10.244.0.5   minikube   <none>           <none>
+redis-app-2   1/1     Running   0          2m18s   10.244.0.6   minikube   <none>           <none>
+redis-app-3   1/1     Running   0          2m14s   10.244.0.7   minikube   <none>           <none>
+redis-app-4   1/1     Running   0          2m10s   10.244.0.8   minikube   <none>           <none>
+redis-app-5   1/1     Running   0          2m5s    10.244.0.9   minikube   <none>           <none>
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli cluster --help
+ERR unknown subcommand '--help'. Try CLUSTER HELP.
+
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli cluster help  
+CLUSTER <subcommand> [<arg> [value] [opt] ...]. Subcommands are:
+ADDSLOTS <slot> [<slot> ...]
+    Assign slots to current node.
+ADDSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+    Assign slots which are between <start-slot> and <end-slot> to current node.
+BUMPEPOCH
+    Advance the cluster config epoch.
+COUNT-FAILURE-REPORTS <node-id>
+    Return number of failure reports for <node-id>.
+COUNTKEYSINSLOT <slot>
+    Return the number of keys in <slot>.
+DELSLOTS <slot> [<slot> ...]
+    Delete slots information from current node.
+DELSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+    Delete slots information which are between <start-slot> and <end-slot> from current node.
+FAILOVER [FORCE|TAKEOVER]
+    Promote current replica node to being a master.
+FORGET <node-id>
+    Remove a node from the cluster.
+GETKEYSINSLOT <slot> <count>
+    Return key names stored by current node in a slot.
+FLUSHSLOTS
+    Delete current node own slots information.
+INFO
+    Return information about the cluster.
+KEYSLOT <key>
+    Return the hash slot for <key>.
+MEET <ip> <port> [<bus-port>]
+    Connect nodes into a working cluster.
+MYID
+    Return the node id.
+MYSHARDID
+    Return the node's shard id.
+NODES
+    Return cluster configuration seen by node. Output format:
+    <id> <ip:port@bus-port[,hostname]> <flags> <master> <pings> <pongs> <epoch> <link> <slot> ...
+REPLICATE <node-id>
+    Configure current node as replica to <node-id>.
+RESET [HARD|SOFT]
+    Reset current node (default: soft).
+SET-CONFIG-EPOCH <epoch>
+    Set config epoch of current node.
+SETSLOT <slot> (IMPORTING <node-id>|MIGRATING <node-id>|STABLE|NODE <node-id>)
+    Set slot state.
+REPLICAS <node-id>
+    Return <node-id> replicas.
+SAVECONFIG
+    Force saving cluster configuration on disk.
+SLOTS
+    Return information about slots range mappings. Each range is made of:
+    start, end, master and replicas IP addresses, ports and ids
+SHARDS
+    Return information about slot range mappings and the nodes associated with them.
+LINKS
+    Return information about all network links between this node and its peers.
+    Output format is an array where each array element is a map containing attributes of a link
+HELP
+    Print this help.
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli create --help
+ERR unknown command 'create', with args beginning with: '--help' 
+
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster    
+redis-cli 7.2.1
+
+Usage: redis-cli [OPTIONS] [cmd [arg [arg ...]]]
+  -h <hostname>      Server hostname (default: 127.0.0.1).
+  -p <port>          Server port (default: 6379).
+  -s <socket>        Server socket (overrides hostname and port).
+  -a <password>      Password to use when connecting to the server.
+                     You can also use the REDISCLI_AUTH environment
+                     variable to pass this password more safely
+                     (if both are used, this argument takes precedence).
+  --user <username>  Used to send ACL style 'AUTH username pass'. Needs -a.
+  --pass <password>  Alias of -a for consistency with the new --user option.
+  --askpass          Force user to input password with mask from STDIN.
+                     If this argument is used, '-a' and REDISCLI_AUTH
+                     environment variable will be ignored.
+  -u <uri>           Server URI.
+  -r <repeat>        Execute specified command N times.
+  -i <interval>      When -r is used, waits <interval> seconds per command.
+                     It is possible to specify sub-second times like -i 0.1.
+                     This interval is also used in --scan and --stat per cycle.
+                     and in --bigkeys, --memkeys, and --hotkeys per 100 cycles.
+  -n <db>            Database number.
+  -2                 Start session in RESP2 protocol mode.
+  -3                 Start session in RESP3 protocol mode.
+  -x                 Read last argument from STDIN (see example below).
+  -X                 Read <tag> argument from STDIN (see example below).
+  -d <delimiter>     Delimiter between response bulks for raw formatting (default: \n).
+  -D <delimiter>     Delimiter between responses for raw formatting (default: \n).
+  -c                 Enable cluster mode (follow -ASK and -MOVED redirections).
+  -e                 Return exit error code when command execution fails.
+  --tls              Establish a secure TLS connection.
+  --sni <host>       Server name indication for TLS.
+  --cacert <file>    CA Certificate file to verify with.
+  --cacertdir <dir>  Directory where trusted CA certificates are stored.
+                     If neither cacert nor cacertdir are specified, the default
+                     system-wide trusted root certs configuration will apply.
+  --insecure         Allow insecure TLS connection by skipping cert validation.
+  --cert <file>      Client certificate to authenticate with.
+  --key <file>       Private key file to authenticate with.
+  --tls-ciphers <list> Sets the list of preferred ciphers (TLSv1.2 and below)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string.
+  --tls-ciphersuites <list> Sets the list of preferred ciphersuites (TLSv1.3)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string,
+                     and specifically for TLSv1.3 ciphersuites.
+  --raw              Use raw formatting for replies (default when STDOUT is
+                     not a tty).
+  --no-raw           Force formatted output even when STDOUT is not a tty.
+  --quoted-input     Force input to be handled as quoted strings.
+  --csv              Output in CSV format.
+  --json             Output in JSON format (default RESP3, use -2 if you want to use with RESP2).
+  --quoted-json      Same as --json, but produce ASCII-safe quoted strings, not Unicode.
+  --show-pushes <yn> Whether to print RESP3 PUSH messages.  Enabled by default when
+                     STDOUT is a tty but can be overridden with --show-pushes no.
+  --stat             Print rolling stats about server: mem, clients, ...
+  --latency          Enter a special mode continuously sampling latency.
+                     If you use this mode in an interactive session it runs
+                     forever displaying real-time stats. Otherwise if --raw or
+                     --csv is specified, or if you redirect the output to a non
+                     TTY, it samples the latency for 1 second (you can use
+                     -i to change the interval), then produces a single output
+                     and exits.
+  --latency-history  Like --latency but tracking latency changes over time.
+                     Default time interval is 15 sec. Change it using -i.
+  --latency-dist     Shows latency as a spectrum, requires xterm 256 colors.
+                     Default time interval is 1 sec. Change it using -i.
+  --lru-test <keys>  Simulate a cache workload with an 80-20 distribution.
+  --replica          Simulate a replica showing commands received from the master.
+  --rdb <filename>   Transfer an RDB dump from remote server to local file.
+                     Use filename of "-" to write to stdout.
+  --functions-rdb <filename> Like --rdb but only get the functions (not the keys)
+                     when getting the RDB dump file.
+  --pipe             Transfer raw Redis protocol from stdin to server.
+  --pipe-timeout <n> In --pipe mode, abort with error if after sending all data.
+                     no reply is received within <n> seconds.
+                     Default timeout: 30. Use 0 to wait forever.
+  --bigkeys          Sample Redis keys looking for keys with many elements (complexity).
+  --memkeys          Sample Redis keys looking for keys consuming a lot of memory.
+  --memkeys-samples <n> Sample Redis keys looking for keys consuming a lot of memory.
+                     And define number of key elements to sample
+  --hotkeys          Sample Redis keys looking for hot keys.
+                     only works when maxmemory-policy is *lfu.
+  --scan             List all keys using the SCAN command.
+  --pattern <pat>    Keys pattern when using the --scan, --bigkeys or --hotkeys
+                     options (default: *).
+  --count <count>    Count option when using the --scan, --bigkeys or --hotkeys (default: 10).
+  --quoted-pattern <pat> Same as --pattern, but the specified string can be
+                         quoted, in order to pass an otherwise non binary-safe string.
+  --intrinsic-latency <sec> Run a test to measure intrinsic system latency.
+                     The test will run for the specified amount of seconds.
+  --eval <file>      Send an EVAL command using the Lua script at <file>.
+  --ldb              Used with --eval enable the Redis Lua debugger.
+  --ldb-sync-mode    Like --ldb but uses the synchronous Lua debugger, in
+                     this mode the server is blocked and script changes are
+                     not rolled back from the server memory.
+  --cluster <command> [args...] [opts...]
+                     Cluster Manager command and arguments (see below).
+  --verbose          Verbose mode.
+  --no-auth-warning  Don't show warning message when using password on command
+                     line interface.
+  --help             Output this help and exit.
+  --version          Output version and exit.
+
+Cluster Manager Commands:
+  Use --cluster help to list all available cluster manager commands.
+
+Examples:
+  cat /etc/passwd | redis-cli -x set mypasswd
+  redis-cli -D "" --raw dump key > key.dump && redis-cli -X dump_tag restore key2 0 dump_tag replace < key.dump
+  redis-cli -r 100 lpush mylist x
+  redis-cli -r 100 -i 1 info | grep used_memory_human:
+  redis-cli --quoted-input set '"null-\x00-separated"' value
+  redis-cli --eval myscript.lua key1 key2 , arg1 arg2 arg3
+  redis-cli --scan --pattern '*:12345*'
+  redis-cli --scan --pattern '*:12345*' --count 100
+
+  (Note: when using --eval the comma separates KEYS[] from ARGV[] items)
+
+When no command is given, redis-cli starts in interactive mode.
+Type "help" in interactive mode for information on available commands
+and settings.
+
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --help    
+redis-cli 7.2.1
+
+Usage: redis-cli [OPTIONS] [cmd [arg [arg ...]]]
+  -h <hostname>      Server hostname (default: 127.0.0.1).
+  -p <port>          Server port (default: 6379).
+  -s <socket>        Server socket (overrides hostname and port).
+  -a <password>      Password to use when connecting to the server.
+                     You can also use the REDISCLI_AUTH environment
+                     variable to pass this password more safely
+                     (if both are used, this argument takes precedence).
+  --user <username>  Used to send ACL style 'AUTH username pass'. Needs -a.
+  --pass <password>  Alias of -a for consistency with the new --user option.
+  --askpass          Force user to input password with mask from STDIN.
+                     If this argument is used, '-a' and REDISCLI_AUTH
+                     environment variable will be ignored.
+  -u <uri>           Server URI.
+  -r <repeat>        Execute specified command N times.
+  -i <interval>      When -r is used, waits <interval> seconds per command.
+                     It is possible to specify sub-second times like -i 0.1.
+                     This interval is also used in --scan and --stat per cycle.
+                     and in --bigkeys, --memkeys, and --hotkeys per 100 cycles.
+  -n <db>            Database number.
+  -2                 Start session in RESP2 protocol mode.
+  -3                 Start session in RESP3 protocol mode.
+  -x                 Read last argument from STDIN (see example below).
+  -X                 Read <tag> argument from STDIN (see example below).
+  -d <delimiter>     Delimiter between response bulks for raw formatting (default: \n).
+  -D <delimiter>     Delimiter between responses for raw formatting (default: \n).
+  -c                 Enable cluster mode (follow -ASK and -MOVED redirections).
+  -e                 Return exit error code when command execution fails.
+  --tls              Establish a secure TLS connection.
+  --sni <host>       Server name indication for TLS.
+  --cacert <file>    CA Certificate file to verify with.
+  --cacertdir <dir>  Directory where trusted CA certificates are stored.
+                     If neither cacert nor cacertdir are specified, the default
+                     system-wide trusted root certs configuration will apply.
+  --insecure         Allow insecure TLS connection by skipping cert validation.
+  --cert <file>      Client certificate to authenticate with.
+  --key <file>       Private key file to authenticate with.
+  --tls-ciphers <list> Sets the list of preferred ciphers (TLSv1.2 and below)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string.
+  --tls-ciphersuites <list> Sets the list of preferred ciphersuites (TLSv1.3)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string,
+                     and specifically for TLSv1.3 ciphersuites.
+  --raw              Use raw formatting for replies (default when STDOUT is
+                     not a tty).
+  --no-raw           Force formatted output even when STDOUT is not a tty.
+  --quoted-input     Force input to be handled as quoted strings.
+  --csv              Output in CSV format.
+  --json             Output in JSON format (default RESP3, use -2 if you want to use with RESP2).
+  --quoted-json      Same as --json, but produce ASCII-safe quoted strings, not Unicode.
+  --show-pushes <yn> Whether to print RESP3 PUSH messages.  Enabled by default when
+                     STDOUT is a tty but can be overridden with --show-pushes no.
+  --stat             Print rolling stats about server: mem, clients, ...
+  --latency          Enter a special mode continuously sampling latency.
+                     If you use this mode in an interactive session it runs
+                     forever displaying real-time stats. Otherwise if --raw or
+                     --csv is specified, or if you redirect the output to a non
+                     TTY, it samples the latency for 1 second (you can use
+                     -i to change the interval), then produces a single output
+                     and exits.
+  --latency-history  Like --latency but tracking latency changes over time.
+                     Default time interval is 15 sec. Change it using -i.
+  --latency-dist     Shows latency as a spectrum, requires xterm 256 colors.
+                     Default time interval is 1 sec. Change it using -i.
+  --lru-test <keys>  Simulate a cache workload with an 80-20 distribution.
+  --replica          Simulate a replica showing commands received from the master.
+  --rdb <filename>   Transfer an RDB dump from remote server to local file.
+                     Use filename of "-" to write to stdout.
+  --functions-rdb <filename> Like --rdb but only get the functions (not the keys)
+                     when getting the RDB dump file.
+  --pipe             Transfer raw Redis protocol from stdin to server.
+  --pipe-timeout <n> In --pipe mode, abort with error if after sending all data.
+                     no reply is received within <n> seconds.
+                     Default timeout: 30. Use 0 to wait forever.
+  --bigkeys          Sample Redis keys looking for keys with many elements (complexity).
+  --memkeys          Sample Redis keys looking for keys consuming a lot of memory.
+  --memkeys-samples <n> Sample Redis keys looking for keys consuming a lot of memory.
+                     And define number of key elements to sample
+  --hotkeys          Sample Redis keys looking for hot keys.
+                     only works when maxmemory-policy is *lfu.
+  --scan             List all keys using the SCAN command.
+  --pattern <pat>    Keys pattern when using the --scan, --bigkeys or --hotkeys
+                     options (default: *).
+  --count <count>    Count option when using the --scan, --bigkeys or --hotkeys (default: 10).
+  --quoted-pattern <pat> Same as --pattern, but the specified string can be
+                         quoted, in order to pass an otherwise non binary-safe string.
+  --intrinsic-latency <sec> Run a test to measure intrinsic system latency.
+                     The test will run for the specified amount of seconds.
+  --eval <file>      Send an EVAL command using the Lua script at <file>.
+  --ldb              Used with --eval enable the Redis Lua debugger.
+  --ldb-sync-mode    Like --ldb but uses the synchronous Lua debugger, in
+                     this mode the server is blocked and script changes are
+                     not rolled back from the server memory.
+  --cluster <command> [args...] [opts...]
+                     Cluster Manager command and arguments (see below).
+  --verbose          Verbose mode.
+  --no-auth-warning  Don't show warning message when using password on command
+                     line interface.
+  --help             Output this help and exit.
+  --version          Output version and exit.
+
+Cluster Manager Commands:
+  Use --cluster help to list all available cluster manager commands.
+
+Examples:
+  cat /etc/passwd | redis-cli -x set mypasswd
+  redis-cli -D "" --raw dump key > key.dump && redis-cli -X dump_tag restore key2 0 dump_tag replace < key.dump
+  redis-cli -r 100 lpush mylist x
+  redis-cli -r 100 -i 1 info | grep used_memory_human:
+  redis-cli --quoted-input set '"null-\x00-separated"' value
+  redis-cli --eval myscript.lua key1 key2 , arg1 arg2 arg3
+  redis-cli --scan --pattern '*:12345*'
+  redis-cli --scan --pattern '*:12345*' --count 100
+
+  (Note: when using --eval the comma separates KEYS[] from ARGV[] items)
+
+When no command is given, redis-cli starts in interactive mode.
+Type "help" in interactive mode for information on available commands
+and settings.
+
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster
+redis-cli 7.2.1
+
+Usage: redis-cli [OPTIONS] [cmd [arg [arg ...]]]
+  -h <hostname>      Server hostname (default: 127.0.0.1).
+  -p <port>          Server port (default: 6379).
+  -s <socket>        Server socket (overrides hostname and port).
+  -a <password>      Password to use when connecting to the server.
+                     You can also use the REDISCLI_AUTH environment
+                     variable to pass this password more safely
+                     (if both are used, this argument takes precedence).
+  --user <username>  Used to send ACL style 'AUTH username pass'. Needs -a.
+  --pass <password>  Alias of -a for consistency with the new --user option.
+  --askpass          Force user to input password with mask from STDIN.
+                     If this argument is used, '-a' and REDISCLI_AUTH
+                     environment variable will be ignored.
+  -u <uri>           Server URI.
+  -r <repeat>        Execute specified command N times.
+  -i <interval>      When -r is used, waits <interval> seconds per command.
+                     It is possible to specify sub-second times like -i 0.1.
+                     This interval is also used in --scan and --stat per cycle.
+                     and in --bigkeys, --memkeys, and --hotkeys per 100 cycles.
+  -n <db>            Database number.
+  -2                 Start session in RESP2 protocol mode.
+  -3                 Start session in RESP3 protocol mode.
+  -x                 Read last argument from STDIN (see example below).
+  -X                 Read <tag> argument from STDIN (see example below).
+  -d <delimiter>     Delimiter between response bulks for raw formatting (default: \n).
+  -D <delimiter>     Delimiter between responses for raw formatting (default: \n).
+  -c                 Enable cluster mode (follow -ASK and -MOVED redirections).
+  -e                 Return exit error code when command execution fails.
+  --tls              Establish a secure TLS connection.
+  --sni <host>       Server name indication for TLS.
+  --cacert <file>    CA Certificate file to verify with.
+  --cacertdir <dir>  Directory where trusted CA certificates are stored.
+                     If neither cacert nor cacertdir are specified, the default
+                     system-wide trusted root certs configuration will apply.
+  --insecure         Allow insecure TLS connection by skipping cert validation.
+  --cert <file>      Client certificate to authenticate with.
+  --key <file>       Private key file to authenticate with.
+  --tls-ciphers <list> Sets the list of preferred ciphers (TLSv1.2 and below)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string.
+  --tls-ciphersuites <list> Sets the list of preferred ciphersuites (TLSv1.3)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string,
+                     and specifically for TLSv1.3 ciphersuites.
+  --raw              Use raw formatting for replies (default when STDOUT is
+                     not a tty).
+  --no-raw           Force formatted output even when STDOUT is not a tty.
+  --quoted-input     Force input to be handled as quoted strings.
+  --csv              Output in CSV format.
+  --json             Output in JSON format (default RESP3, use -2 if you want to use with RESP2).
+  --quoted-json      Same as --json, but produce ASCII-safe quoted strings, not Unicode.
+  --show-pushes <yn> Whether to print RESP3 PUSH messages.  Enabled by default when
+                     STDOUT is a tty but can be overridden with --show-pushes no.
+  --stat             Print rolling stats about server: mem, clients, ...
+  --latency          Enter a special mode continuously sampling latency.
+                     If you use this mode in an interactive session it runs
+                     forever displaying real-time stats. Otherwise if --raw or
+                     --csv is specified, or if you redirect the output to a non
+                     TTY, it samples the latency for 1 second (you can use
+                     -i to change the interval), then produces a single output
+                     and exits.
+  --latency-history  Like --latency but tracking latency changes over time.
+                     Default time interval is 15 sec. Change it using -i.
+  --latency-dist     Shows latency as a spectrum, requires xterm 256 colors.
+                     Default time interval is 1 sec. Change it using -i.
+  --lru-test <keys>  Simulate a cache workload with an 80-20 distribution.
+  --replica          Simulate a replica showing commands received from the master.
+  --rdb <filename>   Transfer an RDB dump from remote server to local file.
+                     Use filename of "-" to write to stdout.
+  --functions-rdb <filename> Like --rdb but only get the functions (not the keys)
+                     when getting the RDB dump file.
+  --pipe             Transfer raw Redis protocol from stdin to server.
+  --pipe-timeout <n> In --pipe mode, abort with error if after sending all data.
+                     no reply is received within <n> seconds.
+                     Default timeout: 30. Use 0 to wait forever.
+  --bigkeys          Sample Redis keys looking for keys with many elements (complexity).
+  --memkeys          Sample Redis keys looking for keys consuming a lot of memory.
+  --memkeys-samples <n> Sample Redis keys looking for keys consuming a lot of memory.
+                     And define number of key elements to sample
+  --hotkeys          Sample Redis keys looking for hot keys.
+                     only works when maxmemory-policy is *lfu.
+  --scan             List all keys using the SCAN command.
+  --pattern <pat>    Keys pattern when using the --scan, --bigkeys or --hotkeys
+                     options (default: *).
+  --count <count>    Count option when using the --scan, --bigkeys or --hotkeys (default: 10).
+  --quoted-pattern <pat> Same as --pattern, but the specified string can be
+                         quoted, in order to pass an otherwise non binary-safe string.
+  --intrinsic-latency <sec> Run a test to measure intrinsic system latency.
+                     The test will run for the specified amount of seconds.
+  --eval <file>      Send an EVAL command using the Lua script at <file>.
+  --ldb              Used with --eval enable the Redis Lua debugger.
+  --ldb-sync-mode    Like --ldb but uses the synchronous Lua debugger, in
+                     this mode the server is blocked and script changes are
+                     not rolled back from the server memory.
+  --cluster <command> [args...] [opts...]
+                     Cluster Manager command and arguments (see below).
+  --verbose          Verbose mode.
+  --no-auth-warning  Don't show warning message when using password on command
+                     line interface.
+  --help             Output this help and exit.
+  --version          Output version and exit.
+
+Cluster Manager Commands:
+  Use --cluster help to list all available cluster manager commands.
+
+Examples:
+  cat /etc/passwd | redis-cli -x set mypasswd
+  redis-cli -D "" --raw dump key > key.dump && redis-cli -X dump_tag restore key2 0 dump_tag replace < key.dump
+  redis-cli -r 100 lpush mylist x
+  redis-cli -r 100 -i 1 info | grep used_memory_human:
+  redis-cli --quoted-input set '"null-\x00-separated"' value
+  redis-cli --eval myscript.lua key1 key2 , arg1 arg2 arg3
+  redis-cli --scan --pattern '*:12345*'
+  redis-cli --scan --pattern '*:12345*' --count 100
+
+  (Note: when using --eval the comma separates KEYS[] from ARGV[] items)
+
+When no command is given, redis-cli starts in interactive mode.
+Type "help" in interactive mode for information on available commands
+and settings.
+
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster --help
+Unknown --cluster subcommand
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster help  
+Cluster Manager Commands:
+  create         host1:port1 ... hostN:portN
+                 --cluster-replicas <arg>
+  check          <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+  info           <host:port> or <host> <port> - separated by either colon or space
+  fix            <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+                 --cluster-fix-with-unreachable-masters
+  reshard        <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-from <arg>
+                 --cluster-to <arg>
+                 --cluster-slots <arg>
+                 --cluster-yes
+                 --cluster-timeout <arg>
+                 --cluster-pipeline <arg>
+                 --cluster-replace
+  rebalance      <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-weight <node1=w1...nodeN=wN>
+                 --cluster-use-empty-masters
+                 --cluster-timeout <arg>
+                 --cluster-simulate
+                 --cluster-pipeline <arg>
+                 --cluster-threshold <arg>
+                 --cluster-replace
+  add-node       new_host:new_port existing_host:existing_port
+                 --cluster-slave
+                 --cluster-master-id <arg>
+  del-node       host:port node_id
+  call           host:port command arg arg .. arg
+                 --cluster-only-masters
+                 --cluster-only-replicas
+  set-timeout    host:port milliseconds
+  import         host:port
+                 --cluster-from <arg>
+                 --cluster-from-user <arg>
+                 --cluster-from-pass <arg>
+                 --cluster-from-askpass
+                 --cluster-copy
+                 --cluster-replace
+  backup         host:port backup_directory
+  help           
+
+For check, fix, reshard, del-node, set-timeout, info, rebalance, call, import, backup you can specify the host and port of any working node in the cluster.
+
+Cluster Manager Options:
+  --cluster-yes  Automatic yes to cluster commands prompts
+
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % k logs -f redis-app-0
+1:C 22 Oct 2023 10:34:08.911 # WARNING: Changing databases number from 16 to 1 since we are in cluster mode
+1:C 22 Oct 2023 10:34:08.912 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Oct 2023 10:34:08.913 * Redis version=7.2.1, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Oct 2023 10:34:08.913 * Configuration loaded
+1:M 22 Oct 2023 10:34:08.913 * monotonic clock: POSIX clock_gettime
+1:M 22 Oct 2023 10:34:08.913 * Running mode=cluster, port=6379.
+1:M 22 Oct 2023 10:34:08.916 * No cluster configuration found, I'm 8e93850c4e1316d4e95efb641b2e9a1bfda32c1f
+1:M 22 Oct 2023 10:34:08.921 * Server initialized
+1:M 22 Oct 2023 10:34:08.922 * Creating AOF base file appendonly.aof.1.base.rdb on server start
+1:M 22 Oct 2023 10:34:08.932 * Creating AOF incr file appendonly.aof.1.incr.aof on server start
+1:M 22 Oct 2023 10:34:08.932 * Ready to accept connections tcp
+^C
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod 
+
+ kubectl exec --namespace='redis-cluster' redis-app-0 -c redis -it -- sh 
+
+# bash
+root@redis-app-0:/data# ping
+bash: ping: command not found
+root@redis-app-0:/data# curl
+bash: curl: command not found
+root@redis-app-0:/data# telnet
+bash: telnet: command not found
+root@redis-app-0:/data# redis-cli
+127.0.0.1:6379> 
+root@redis-app-0:/data# redis-cli redis-app-0
+(error) ERR unknown command 'redis-app-0', with args beginning with: 
+root@redis-app-0:/data# redis-cli -h redis-app-0
+redis-app-0:6379> 
+root@redis-app-0:/data# redis-cli -h redis-app-1
+Could not connect to Redis at redis-app-1:6379: Name or service not known
+not connected> 
+root@redis-app-0:/data# redis-cli -h redis-app-2
+Could not connect to Redis at redis-app-2:6379: Name or service not known
+not connected> 
+root@redis-app-0:/data# 
+exit
+# 
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod 
+
+ kubectl exec --namespace='redis-cluster' redis-app-1 -c redis -it -- sh 
+
+# redis-cli -h redis-app-1
+redis-app-1:6379> 
+# 
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod 
+
+ kubectl exec --namespace='redis-cluster' redis-app-2 -c redis -it -- sh 
+
+# bash
+root@redis-app-2:/data# redis-cli -h 10.244.0.7
+10.244.0.7:6379> 
+root@redis-app-2:/data# redis-cli -h 10.244.0.8
+10.244.0.8:6379> 
+root@redis-app-2:/data# 
+exit
+# 
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod 
+
+ kubectl exec --namespace='redis-cluster' redis-app-0 -c redis -it -- sh 
+
+# bash
+root@redis-app-0:/data# redis-cli --cluster help
+Cluster Manager Commands:
+  create         host1:port1 ... hostN:portN
+                 --cluster-replicas <arg>
+  check          <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+  info           <host:port> or <host> <port> - separated by either colon or space
+  fix            <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+                 --cluster-fix-with-unreachable-masters
+  reshard        <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-from <arg>
+                 --cluster-to <arg>
+                 --cluster-slots <arg>
+                 --cluster-yes
+                 --cluster-timeout <arg>
+                 --cluster-pipeline <arg>
+                 --cluster-replace
+  rebalance      <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-weight <node1=w1...nodeN=wN>
+                 --cluster-use-empty-masters
+                 --cluster-timeout <arg>
+                 --cluster-simulate
+                 --cluster-pipeline <arg>
+                 --cluster-threshold <arg>
+                 --cluster-replace
+  add-node       new_host:new_port existing_host:existing_port
+                 --cluster-slave
+                 --cluster-master-id <arg>
+  del-node       host:port node_id
+  call           host:port command arg arg .. arg
+                 --cluster-only-masters
+                 --cluster-only-replicas
+  set-timeout    host:port milliseconds
+  import         host:port
+                 --cluster-from <arg>
+                 --cluster-from-user <arg>
+                 --cluster-from-pass <arg>
+                 --cluster-from-askpass
+                 --cluster-copy
+                 --cluster-replace
+  backup         host:port backup_directory
+  help           
+
+For check, fix, reshard, del-node, set-timeout, info, rebalance, call, import, backup you can specify the host and port of any working node in the cluster.
+
+Cluster Manager Options:
+  --cluster-yes  Automatic yes to cluster commands prompts
+
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4 10.244.0.5 10.244.0.6 10.244.0.7 10.244.0.8 10.244.0.9 
+Invalid address format: 10.244.0.4
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379 ^C
+root@redis-app-0:/data# redis-cli -h 10.244.0.4
+10.244.0.4:6379> 
+root@redis-app-0:/data# redis-cli -h 10.244.0.5
+10.244.0.5:6379> ping
+PONG
+10.244.0.5:6379> 
+root@redis-app-0:/data# redis-cli -h 10.244.0.5 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.4 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.6 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.7 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.8 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.9 ping
+PONG
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379 --replicas 1
+Unrecognized option or bad number of args for: '--replicas'
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli -h 10.244.0.4 ping
+PONG
+root@redis-app-0:/data# redis-cli -h 10.244.0.4 cluster nodes
+8e93850c4e1316d4e95efb641b2e9a1bfda32c1f  10.244.0.4:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli -h 10.244.0.5 cluster nodes
+8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c  10.244.0.5:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli -h 10.244.0.6 cluster nodes
+17660df0a09adde4d3204959f0552d70edb848c1  10.244.0.6:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli -h 10.244.0.7 cluster nodes
+9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe  10.244.0.7:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli -h 10.244.0.8 cluster nodes
+3a8d29d57def105c64555e6a7d3c8e7e262d7ac2  10.244.0.8:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli -h 10.244.0.9 cluster nodes
+326f9761a0176093ff3a43521a92425fe8dfb48b  10.244.0.9:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster -p 6379
+Unknown --cluster subcommand
+root@redis-app-0:/data# redis-cli -c -p 6379
+127.0.0.1:6379> cluster
+(error) ERR wrong number of arguments for 'cluster' command
+127.0.0.1:6379> cluster info
+cluster_state:fail
+cluster_slots_assigned:0
+cluster_slots_ok:0
+cluster_slots_pfail:0
+cluster_slots_fail:0
+cluster_known_nodes:1
+cluster_size:0
+cluster_current_epoch:0
+cluster_my_epoch:0
+cluster_stats_messages_sent:0
+cluster_stats_messages_received:0
+total_cluster_links_buffer_limit_exceeded:0
+127.0.0.1:6379> cluster help
+ 1) CLUSTER <subcommand> [<arg> [value] [opt] ...]. Subcommands are:
+ 2) ADDSLOTS <slot> [<slot> ...]
+ 3)     Assign slots to current node.
+ 4) ADDSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+ 5)     Assign slots which are between <start-slot> and <end-slot> to current node.
+ 6) BUMPEPOCH
+ 7)     Advance the cluster config epoch.
+ 8) COUNT-FAILURE-REPORTS <node-id>
+ 9)     Return number of failure reports for <node-id>.
+10) COUNTKEYSINSLOT <slot>
+11)     Return the number of keys in <slot>.
+12) DELSLOTS <slot> [<slot> ...]
+13)     Delete slots information from current node.
+14) DELSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+15)     Delete slots information which are between <start-slot> and <end-slot> from current node.
+16) FAILOVER [FORCE|TAKEOVER]
+17)     Promote current replica node to being a master.
+18) FORGET <node-id>
+19)     Remove a node from the cluster.
+20) GETKEYSINSLOT <slot> <count>
+21)     Return key names stored by current node in a slot.
+22) FLUSHSLOTS
+23)     Delete current node own slots information.
+24) INFO
+25)     Return information about the cluster.
+26) KEYSLOT <key>
+27)     Return the hash slot for <key>.
+28) MEET <ip> <port> [<bus-port>]
+29)     Connect nodes into a working cluster.
+30) MYID
+31)     Return the node id.
+32) MYSHARDID
+33)     Return the node's shard id.
+34) NODES
+35)     Return cluster configuration seen by node. Output format:
+36)     <id> <ip:port@bus-port[,hostname]> <flags> <master> <pings> <pongs> <epoch> <link> <slot> ...
+37) REPLICATE <node-id>
+38)     Configure current node as replica to <node-id>.
+39) RESET [HARD|SOFT]
+40)     Reset current node (default: soft).
+41) SET-CONFIG-EPOCH <epoch>
+42)     Set config epoch of current node.
+43) SETSLOT <slot> (IMPORTING <node-id>|MIGRATING <node-id>|STABLE|NODE <node-id>)
+44)     Set slot state.
+45) REPLICAS <node-id>
+46)     Return <node-id> replicas.
+47) SAVECONFIG
+48)     Force saving cluster configuration on disk.
+49) SLOTS
+50)     Return information about slots range mappings. Each range is made of:
+51)     start, end, master and replicas IP addresses, ports and ids
+52) SHARDS
+53)     Return information about slot range mappings and the nodes associated with them.
+54) LINKS
+55)     Return information about all network links between this node and its peers.
+56)     Output format is an array where each array element is a map containing attributes of a link
+57) HELP
+58)     Print this help.
+127.0.0.1:6379> CLUSTER REPLICAS
+(error) ERR wrong number of arguments for 'cluster|replicas' command
+127.0.0.1:6379> CLUSTER REPLICAS 326f9761a0176093ff3a43521a92425fe8dfb48b
+(error) ERR Unknown node 326f9761a0176093ff3a43521a92425fe8dfb48b
+127.0.0.1:6379> CLUSTER REPLICAS 8e93850c4e1316d4e95efb641b2e9a1bfda32c1f
+(empty array)
+127.0.0.1:6379> CLUSTER MYID
+"8e93850c4e1316d4e95efb641b2e9a1bfda32c1f"
+127.0.0.1:6379> CLUSTER SHARDS
+1) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "8e93850c4e1316d4e95efb641b2e9a1bfda32c1f"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) " 10.244.0.4"
+          7) "endpoint"
+          8) " 10.244.0.4"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+127.0.0.1:6379> CLUSTER LINKS
+(empty array)
+127.0.0.1:6379> CLUSTER MYSHARDID
+"99c5817392973cc6ea9ccf79429064dcec368dcf"
+127.0.0.1:6379> CLUSTER MYID
+"8e93850c4e1316d4e95efb641b2e9a1bfda32c1f"
+127.0.0.1:6379> CLUSTER MEET 10.244.0.5 6379
+OK
+127.0.0.1:6379> CLUSTER NODES
+8e93850c4e1316d4e95efb641b2e9a1bfda32c1f  10.244.0.4:6379@16379 myself,master - 0 0 1 connected
+8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c 10.244.0.5:6379@16379 master - 0 1697972165449 0 connected
+127.0.0.1:6379> CLUSTER MEET 10.244.0.6 6379
+OK
+127.0.0.1:6379> CLUSTER MEET 10.244.0.7 6379
+OK
+127.0.0.1:6379> CLUSTER MEET 10.244.0.8 6379
+OK
+127.0.0.1:6379> CLUSTER MEET 10.244.0.9 6379
+OK
+127.0.0.1:6379> CLUSTER MEET 10.244.0.10 6379
+OK
+127.0.0.1:6379> CLUSTER MEET 10.244.0.11 6379
+OK
+127.0.0.1:6379> CLUSTER NODES
+8e93850c4e1316d4e95efb641b2e9a1bfda32c1f  10.244.0.4:6379@16379 myself,master - 0 0 1 connected
+9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe 10.244.0.7:6379@16379 master - 0 1697972194653 0 connected
+8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c 10.244.0.5:6379@16379 master - 0 1697972194149 0 connected
+326f9761a0176093ff3a43521a92425fe8dfb48b 10.244.0.9:6379@16379 master - 0 1697972193646 0 connected
+17660df0a09adde4d3204959f0552d70edb848c1 10.244.0.6:6379@16379 master - 0 1697972195662 0 connected
+3a8d29d57def105c64555e6a7d3c8e7e262d7ac2 10.244.0.8:6379@16379 master - 0 1697972193645 0 connected
+127.0.0.1:6379> CLUSTER LINKS
+1)  1) "direction"
+    2) "to"
+    3) "node"
+    4) "9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe"
+    5) "create-time"
+    6) (integer) 1697972179834
+    7) "events"
+    8) "r"
+    9) "send-buffer-allocated"
+   10) (integer) 48
+   11) "send-buffer-used"
+   12) (integer) 48
+2)  1) "direction"
+    2) "to"
+    3) "node"
+    4) "8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c"
+    5) "create-time"
+    6) (integer) 1697972160520
+    7) "events"
+    8) "r"
+    9) "send-buffer-allocated"
+   10) (integer) 48
+   11) "send-buffer-used"
+   12) (integer) 48
+3)  1) "direction"
+    2) "to"
+    3) "node"
+    4) "326f9761a0176093ff3a43521a92425fe8dfb48b"
+    5) "create-time"
+    6) (integer) 1697972183961
+    7) "events"
+    8) "r"
+    9) "send-buffer-allocated"
+   10) (integer) 48
+   11) "send-buffer-used"
+   12) (integer) 48
+4)  1) "direction"
+    2) "to"
+    3) "node"
+    4) "17660df0a09adde4d3204959f0552d70edb848c1"
+    5) "create-time"
+    6) (integer) 1697972177213
+    7) "events"
+    8) "r"
+    9) "send-buffer-allocated"
+   10) (integer) 48
+   11) "send-buffer-used"
+   12) (integer) 48
+5)  1) "direction"
+    2) "to"
+    3) "node"
+    4) "3a8d29d57def105c64555e6a7d3c8e7e262d7ac2"
+    5) "create-time"
+    6) (integer) 1697972181948
+    7) "events"
+    8) "r"
+    9) "send-buffer-allocated"
+   10) (integer) 48
+   11) "send-buffer-used"
+   12) (integer) 48
+127.0.0.1:6379> CLUSTER SLAVES
+(error) ERR wrong number of arguments for 'cluster|slaves' command
+127.0.0.1:6379> CLUSTER MYID
+"8e93850c4e1316d4e95efb641b2e9a1bfda32c1f"
+127.0.0.1:6379> CLUSTER SLAVES 8e93850c4e1316d4e95efb641b2e9a1bfda32c1f
+(empty array)
+127.0.0.1:6379> CLUSTER 
+(error) ERR wrong number of arguments for 'cluster' command
+127.0.0.1:6379> CLUSTER HELP
+ 1) CLUSTER <subcommand> [<arg> [value] [opt] ...]. Subcommands are:
+ 2) ADDSLOTS <slot> [<slot> ...]
+ 3)     Assign slots to current node.
+ 4) ADDSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+ 5)     Assign slots which are between <start-slot> and <end-slot> to current node.
+ 6) BUMPEPOCH
+ 7)     Advance the cluster config epoch.
+ 8) COUNT-FAILURE-REPORTS <node-id>
+ 9)     Return number of failure reports for <node-id>.
+10) COUNTKEYSINSLOT <slot>
+11)     Return the number of keys in <slot>.
+12) DELSLOTS <slot> [<slot> ...]
+13)     Delete slots information from current node.
+14) DELSLOTSRANGE <start slot> <end slot> [<start slot> <end slot> ...]
+15)     Delete slots information which are between <start-slot> and <end-slot> from current node.
+16) FAILOVER [FORCE|TAKEOVER]
+17)     Promote current replica node to being a master.
+18) FORGET <node-id>
+19)     Remove a node from the cluster.
+20) GETKEYSINSLOT <slot> <count>
+21)     Return key names stored by current node in a slot.
+22) FLUSHSLOTS
+23)     Delete current node own slots information.
+24) INFO
+25)     Return information about the cluster.
+26) KEYSLOT <key>
+27)     Return the hash slot for <key>.
+28) MEET <ip> <port> [<bus-port>]
+29)     Connect nodes into a working cluster.
+30) MYID
+31)     Return the node id.
+32) MYSHARDID
+33)     Return the node's shard id.
+34) NODES
+35)     Return cluster configuration seen by node. Output format:
+36)     <id> <ip:port@bus-port[,hostname]> <flags> <master> <pings> <pongs> <epoch> <link> <slot> ...
+37) REPLICATE <node-id>
+38)     Configure current node as replica to <node-id>.
+39) RESET [HARD|SOFT]
+40)     Reset current node (default: soft).
+41) SET-CONFIG-EPOCH <epoch>
+42)     Set config epoch of current node.
+43) SETSLOT <slot> (IMPORTING <node-id>|MIGRATING <node-id>|STABLE|NODE <node-id>)
+44)     Set slot state.
+45) REPLICAS <node-id>
+46)     Return <node-id> replicas.
+47) SAVECONFIG
+48)     Force saving cluster configuration on disk.
+49) SLOTS
+50)     Return information about slots range mappings. Each range is made of:
+51)     start, end, master and replicas IP addresses, ports and ids
+52) SHARDS
+53)     Return information about slot range mappings and the nodes associated with them.
+54) LINKS
+55)     Return information about all network links between this node and its peers.
+56)     Output format is an array where each array element is a map containing attributes of a link
+57) HELP
+58)     Print this help.
+127.0.0.1:6379> CLUSTER SHARDS
+1) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "8e93850c4e1316d4e95efb641b2e9a1bfda32c1f"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) " 10.244.0.4"
+          7) "endpoint"
+          8) " 10.244.0.4"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+2) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "3a8d29d57def105c64555e6a7d3c8e7e262d7ac2"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) "10.244.0.8"
+          7) "endpoint"
+          8) "10.244.0.8"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+3) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "326f9761a0176093ff3a43521a92425fe8dfb48b"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) "10.244.0.9"
+          7) "endpoint"
+          8) "10.244.0.9"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+4) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "9c9b3a022fa906e2cd7d1c948c6b284aee9a73fe"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) "10.244.0.7"
+          7) "endpoint"
+          8) "10.244.0.7"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+5) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "8f45ef6b5a434cc4f7127dcb6c220a0e4b79ea6c"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) "10.244.0.5"
+          7) "endpoint"
+          8) "10.244.0.5"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+6) 1) "slots"
+   2) (empty array)
+   3) "nodes"
+   4) 1)  1) "id"
+          2) "17660df0a09adde4d3204959f0552d70edb848c1"
+          3) "port"
+          4) (integer) 6379
+          5) "ip"
+          6) "10.244.0.6"
+          7) "endpoint"
+          8) "10.244.0.6"
+          9) "role"
+         10) "master"
+         11) "replication-offset"
+         12) (integer) 0
+         13) "health"
+         14) "online"
+127.0.0.1:6379> 
+^C
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pvc -A
+NAMESPACE       NAME                     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+redis-cluster   redis-data-redis-app-0   Bound    pvc-15eaf3c6-ab39-452c-a2ca-b04e1d70046f   512Mi      RWO            standard       25m
+redis-cluster   redis-data-redis-app-1   Bound    pvc-6a9f15f4-457f-4725-9941-4f367941b623   512Mi      RWO            standard       25m
+redis-cluster   redis-data-redis-app-2   Bound    pvc-d3d8c265-e1a2-4231-9ed6-9b9aeb1b7db1   512Mi      RWO            standard       25m
+redis-cluster   redis-data-redis-app-3   Bound    pvc-a8243bf8-f034-40b7-9eef-4b04bfb9ddad   512Mi      RWO            standard       25m
+redis-cluster   redis-data-redis-app-4   Bound    pvc-4f1614aa-2e7d-4bbc-bf9e-24581170238c   512Mi      RWO            standard       25m
+redis-cluster   redis-data-redis-app-5   Bound    pvc-8e692ec4-ea3f-44bc-8574-4fad07aaa8ed   512Mi      RWO            standard       25m
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pod -A
+NAMESPACE       NAME                               READY   STATUS    RESTARTS      AGE
+kube-system     coredns-5d78c9869d-gdfqz           1/1     Running   0             4d1h
+kube-system     etcd-minikube                      1/1     Running   0             4d1h
+kube-system     kube-apiserver-minikube            1/1     Running   0             4d1h
+kube-system     kube-controller-manager-minikube   1/1     Running   0             4d1h
+kube-system     kube-proxy-hjtkq                   1/1     Running   0             4d1h
+kube-system     kube-scheduler-minikube            1/1     Running   0             4d1h
+kube-system     storage-provisioner                1/1     Running   4 (27h ago)   4d1h
+redis-cluster   redis-app-0                        1/1     Running   0             25m
+redis-cluster   redis-app-1                        1/1     Running   0             25m
+redis-cluster   redis-app-2                        1/1     Running   0             25m
+redis-cluster   redis-app-3                        1/1     Running   0             25m
+redis-cluster   redis-app-4                        1/1     Running   0             25m
+redis-cluster   redis-app-5                        1/1     Running   0             25m
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pv    
+NAME                                       CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                                  STORAGECLASS   REASON   AGE
+pvc-15eaf3c6-ab39-452c-a2ca-b04e1d70046f   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-0   standard                25m
+pvc-4f1614aa-2e7d-4bbc-bf9e-24581170238c   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-4   standard                25m
+pvc-6a9f15f4-457f-4725-9941-4f367941b623   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-1   standard                25m
+pvc-8e692ec4-ea3f-44bc-8574-4fad07aaa8ed   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-5   standard                25m
+pvc-a8243bf8-f034-40b7-9eef-4b04bfb9ddad   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-3   standard                25m
+pvc-d3d8c265-e1a2-4231-9ed6-9b9aeb1b7db1   512Mi      RWO            Delete           Bound    redis-cluster/redis-data-redis-app-2   standard                25m
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get cm
+NAME               DATA   AGE
+kube-root-ca.crt   1      25m
+redis-conf         1      25m
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster create
+[ERR] Wrong number of arguments for specified --cluster sub command
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster create 10.244.0.4:6379
+[ERR] Wrong number of arguments for specified --cluster sub command
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec -n redis-cluster redis-app-5 -- redis-cli --cluster create 10.244.0.4:6379 --cluster-replicas 1
+[ERR] Wrong number of arguments for specified --cluster sub command
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod
+
+ kubectl exec --namespace='redis-cluster' redis-app-0 -c redis -it -- sh 
+
+# bash    
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379 10.244.0.6:6379 10.244.0.7:6379 10.244.0.8:6379 10.244.0.9:6379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379  --cluster-replicas 1
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379 10.244.0.5:6379  --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379@16379 10.244.0.5:6379@16379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.4:6379@16379 10.244.0.5:6379@16379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# redis-cli --cluster create 10.244.0.5:6379@16379 10.244.0.6:6379@16379 --cluster-replicas 1
+Error: invalid CLUSTER NODES reply
+root@redis-app-0:/data# 
+exit
+# 
+command terminated with exit code 1
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pod -w
+NAME          READY   STATUS    RESTARTS   AGE
+redis-app-0   1/1     Running   0          31s
+redis-app-1   1/1     Running   0          27s
+redis-app-2   1/1     Running   0          23s
+redis-app-3   1/1     Running   0          19s
+redis-app-4   1/1     Running   0          15s
+redis-app-5   1/1     Running   0          11s
+^C%                                                                                                                  kkaruppiah@Karuppiahs-MacBook-Pro 1 % redis-cli
+Could not connect to Redis at 127.0.0.1:6379: Connection refused
+not connected> 
+karuppiah@Karuppiahs-MacBook-Pro 1 % execpod
+
+ kubectl exec --namespace='redis-cluster' redis-app-0 -c redis -it -- sh 
+
+# bash   	
+root@redis-app-0:/data# ls
+root@redis-app-0:/data# pwd
+/data
+root@redis-app-0:/data# ls /var
+backups  cache	lib  local  lock  log  mail  opt  run  spool  tmp
+root@redis-app-0:/data# ls /var/lib/
+apt  dpkg  misc  pam  redis  shells.state  systemd
+root@redis-app-0:/data# ls /var/lib/redis/
+appendonlydir  nodes.conf
+root@redis-app-0:/data# ls /var/lib/redis/nodes.conf 
+/var/lib/redis/nodes.conf
+root@redis-app-0:/data# cat /var/lib/redis/nodes.conf 
+66153d2b3da12309f8ad84a4ff1b014e8a3ded6d :0@0,,tls-port=0,shard-id=868201f6c12201450c0156e4cbe57ebee52274bf myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+root@redis-app-0:/data# 
+exit
+# 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-0 -c redis cat /var/lib/redis/nodes.conf
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+66153d2b3da12309f8ad84a4ff1b014e8a3ded6d :0@0,,tls-port=0,shard-id=868201f6c12201450c0156e4cbe57ebee52274bf myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-0 -c redis -- cat /var/lib/redis/nodes.conf  
+66153d2b3da12309f8ad84a4ff1b014e8a3ded6d :0@0,,tls-port=0,shard-id=868201f6c12201450c0156e4cbe57ebee52274bf myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-1 -c redis -- cat /var/lib/redis/nodes.conf 
+d6e0d5156cc652a23cccf397489c4bf6718a97ab :0@0,,tls-port=0,shard-id=068de45a726aeae55035baefccb4eae9d302697a myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-2 -c redis -- cat /var/lib/redis/nodes.conf 
+2085a48075bc965abe959d4ee8d3529c362c9231 :0@0,,tls-port=0,shard-id=8c2ceca4b687131de801129f011564452af5cd33 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-3 -c redis -- cat /var/lib/redis/nodes.conf 
+a07a0ab94d8142c4da8976fb5cef22b2a6dd22ca :0@0,,tls-port=0,shard-id=1331a5f1d7d27efa6e0346965d4f8918a7c579f2 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-4 -c redis -- cat /var/lib/redis/nodes.conf 
+1e14ad8806e6bd1beb2e8ede11a482199454997e :0@0,,tls-port=0,shard-id=213a9b372e32c30b86942e14cfeff96523e49ea7 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -- cat /var/lib/redis/nodes.conf 
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee :0@0,,tls-port=0,shard-id=78ba6d99f36caef0a2d9a640782e90c8dc411602 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-6 -c redis -- cat /var/lib/redis/nodes.conf 
+Error from server (NotFound): pods "redis-app-6" not found
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -- redis-cli cluster nodes
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee  10.244.0.15:6379@16379 myself,master - 0 0 0 connected
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -- cat /var/lib/redis/nodes.conf
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee :0@0,,tls-port=0,shard-id=78ba6d99f36caef0a2d9a640782e90c8dc411602 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- vi /var/lib/redis/nodes.conf 
+OCI runtime exec failed: exec failed: unable to start container process: exec: "vi": executable file not found in $PATH: unknown
+command terminated with exit code 126
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- nano /var/lib/redis/nodes.conf 
+OCI runtime exec failed: exec failed: unable to start container process: exec: "nano": executable file not found in $PATH: unknown
+command terminated with exit code 126
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- apt install vim
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package vim
+command terminated with exit code 100
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- sudo apt install vim
+OCI runtime exec failed: exec failed: unable to start container process: exec: "sudo": executable file not found in $PATH: unknown
+command terminated with exit code 126
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- apt install vi      
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package vi
+command terminated with exit code 100
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it bash   
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+root@redis-app-5:/data# 
+exit
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- bash
+root@redis-app-5:/data# ls
+root@redis-app-5:/data# apt update
+Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Get:2 http://deb.debian.org/debian bookworm-updates InRelease [52.1 kB]
+Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8780 kB]
+Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6408 B]
+Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [86.2 kB]
+Fetched 9124 kB in 3s (3415 kB/s)                     
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@redis-app-5:/data# apt install vi
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package vi
+root@redis-app-5:/data# apt install vim
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  libgpm2 libsodium23 vim-common vim-runtime xxd
+Suggested packages:
+  gpm ctags vim-doc vim-scripts
+The following NEW packages will be installed:
+  libgpm2 libsodium23 vim vim-common vim-runtime xxd
+0 upgraded, 6 newly installed, 0 to remove and 0 not upgraded.
+Need to get 8976 kB of archives.
+After this operation, 41.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://deb.debian.org/debian bookworm/main amd64 vim-common all 2:9.0.1378-2 [124 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 libgpm2 amd64 1.20.7-10+b1 [14.2 kB]
+Get:3 http://deb.debian.org/debian bookworm/main amd64 libsodium23 amd64 1.0.18-1 [161 kB]
+Get:4 http://deb.debian.org/debian bookworm/main amd64 vim-runtime all 2:9.0.1378-2 [7025 kB]
+Get:5 http://deb.debian.org/debian bookworm/main amd64 vim amd64 2:9.0.1378-2 [1567 kB]
+Get:6 http://deb.debian.org/debian bookworm/main amd64 xxd amd64 2:9.0.1378-2 [83.7 kB]
+Fetched 8976 kB in 1s (9879 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package vim-common.
+(Reading database ... 7847 files and directories currently installed.)
+Preparing to unpack .../0-vim-common_2%3a9.0.1378-2_all.deb ...
+Unpacking vim-common (2:9.0.1378-2) ...
+Selecting previously unselected package libgpm2:amd64.
+Preparing to unpack .../1-libgpm2_1.20.7-10+b1_amd64.deb ...
+Unpacking libgpm2:amd64 (1.20.7-10+b1) ...
+Selecting previously unselected package libsodium23:amd64.
+Preparing to unpack .../2-libsodium23_1.0.18-1_amd64.deb ...
+Unpacking libsodium23:amd64 (1.0.18-1) ...
+Selecting previously unselected package vim-runtime.
+Preparing to unpack .../3-vim-runtime_2%3a9.0.1378-2_all.deb ...
+Adding 'diversion of /usr/share/vim/vim90/doc/help.txt to /usr/share/vim/vim90/doc/help.txt.vim-tiny by vim-runtime'
+Adding 'diversion of /usr/share/vim/vim90/doc/tags to /usr/share/vim/vim90/doc/tags.vim-tiny by vim-runtime'
+Unpacking vim-runtime (2:9.0.1378-2) ...
+Selecting previously unselected package vim.
+Preparing to unpack .../4-vim_2%3a9.0.1378-2_amd64.deb ...
+Unpacking vim (2:9.0.1378-2) ...
+Selecting previously unselected package xxd.
+Preparing to unpack .../5-xxd_2%3a9.0.1378-2_amd64.deb ...
+Unpacking xxd (2:9.0.1378-2) ...
+Setting up libsodium23:amd64 (1.0.18-1) ...
+Setting up libgpm2:amd64 (1.20.7-10+b1) ...
+Setting up xxd (2:9.0.1378-2) ...
+Setting up vim-common (2:9.0.1378-2) ...
+Setting up vim-runtime (2:9.0.1378-2) ...
+Setting up vim (2:9.0.1378-2) ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/da/man1/editor.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/de/man1/editor.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/editor.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/it/man1/editor.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ja/man1/editor.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/pl/man1/editor.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ru/man1/editor.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/tr/man1/editor.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group editor) doesn't exist
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/ex.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/da/man1/ex.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/de/man1/ex.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/ex.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/it/man1/ex.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ja/man1/ex.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/pl/man1/ex.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ru/man1/ex.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/tr/man1/ex.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group ex) doesn't exist
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/vi.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/da/man1/vi.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/de/man1/vi.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/vi.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/it/man1/vi.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ja/man1/vi.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/pl/man1/vi.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ru/man1/vi.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/tr/man1/vi.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group vi) doesn't exist
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/view.1.gz because associated file /usr/share/man/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/da/man1/view.1.gz because associated file /usr/share/man/da/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/de/man1/view.1.gz because associated file /usr/share/man/de/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/fr/man1/view.1.gz because associated file /usr/share/man/fr/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/it/man1/view.1.gz because associated file /usr/share/man/it/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ja/man1/view.1.gz because associated file /usr/share/man/ja/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/pl/man1/view.1.gz because associated file /usr/share/man/pl/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/ru/man1/view.1.gz because associated file /usr/share/man/ru/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/tr/man1/view.1.gz because associated file /usr/share/man/tr/man1/vim.1.gz (of link group view) doesn't exist
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+Processing triggers for libc-bin (2.36-9+deb12u3) ...
+root@redis-app-5:/data# ls
+root@redis-app-5:/data# vi /var/lib/
+apt/          dpkg/         misc/         pam/          redis/        shells.state  systemd/      vim/
+root@redis-app-5:/data# vi /var/lib/redis/
+appendonlydir/ nodes.conf     
+root@redis-app-5:/data# vi /var/lib/redis/nodes.conf 
+root@redis-app-5:/data# ifconfig
+bash: ifconfig: command not found
+root@redis-app-5:/data# hostname 
+redis-app-5
+root@redis-app-5:/data# ip
+bash: ip: command not found
+root@redis-app-5:/data# redis-cli cluster nodes
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee  10.244.0.15:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-5:/data# 
+exit
+karuppiah@Karuppiahs-MacBook-Pro 1 % kubectl exec --namespace='redis-cluster' redis-app-5 -c redis -it -- bash
+root@redis-app-5:/data# vi /var/lib/redis/nodes.conf 
+root@redis-app-5:/data# vi /var/lib/redis/nodes.conf 
+root@redis-app-5:/data# redis-cli --cluster create 10.244.0.15:6379      
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-5:/data# redis-cli --cluster create 10.244.0.15:6379 --cluster-replicas 0
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-5:/data# redis-cli --cluster create 10.244.0.15:6379 --cluster-replicas 1
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-5:/data# redis-cli --cluster create 10.244.0.15:6379 
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-5:/data# echo $?
+1
+root@redis-app-5:/data# redis-cli --cluster create 
+[ERR] Wrong number of arguments for specified --cluster sub command
+root@redis-app-5:/data# redis-cli --cluster 
+redis-cli 7.2.1
+
+Usage: redis-cli [OPTIONS] [cmd [arg [arg ...]]]
+  -h <hostname>      Server hostname (default: 127.0.0.1).
+  -p <port>          Server port (default: 6379).
+  -s <socket>        Server socket (overrides hostname and port).
+  -a <password>      Password to use when connecting to the server.
+                     You can also use the REDISCLI_AUTH environment
+                     variable to pass this password more safely
+                     (if both are used, this argument takes precedence).
+  --user <username>  Used to send ACL style 'AUTH username pass'. Needs -a.
+  --pass <password>  Alias of -a for consistency with the new --user option.
+  --askpass          Force user to input password with mask from STDIN.
+                     If this argument is used, '-a' and REDISCLI_AUTH
+                     environment variable will be ignored.
+  -u <uri>           Server URI.
+  -r <repeat>        Execute specified command N times.
+  -i <interval>      When -r is used, waits <interval> seconds per command.
+                     It is possible to specify sub-second times like -i 0.1.
+                     This interval is also used in --scan and --stat per cycle.
+                     and in --bigkeys, --memkeys, and --hotkeys per 100 cycles.
+  -n <db>            Database number.
+  -2                 Start session in RESP2 protocol mode.
+  -3                 Start session in RESP3 protocol mode.
+  -x                 Read last argument from STDIN (see example below).
+  -X                 Read <tag> argument from STDIN (see example below).
+  -d <delimiter>     Delimiter between response bulks for raw formatting (default: \n).
+  -D <delimiter>     Delimiter between responses for raw formatting (default: \n).
+  -c                 Enable cluster mode (follow -ASK and -MOVED redirections).
+  -e                 Return exit error code when command execution fails.
+  --tls              Establish a secure TLS connection.
+  --sni <host>       Server name indication for TLS.
+  --cacert <file>    CA Certificate file to verify with.
+  --cacertdir <dir>  Directory where trusted CA certificates are stored.
+                     If neither cacert nor cacertdir are specified, the default
+                     system-wide trusted root certs configuration will apply.
+  --insecure         Allow insecure TLS connection by skipping cert validation.
+  --cert <file>      Client certificate to authenticate with.
+  --key <file>       Private key file to authenticate with.
+  --tls-ciphers <list> Sets the list of preferred ciphers (TLSv1.2 and below)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string.
+  --tls-ciphersuites <list> Sets the list of preferred ciphersuites (TLSv1.3)
+                     in order of preference from highest to lowest separated by colon (":").
+                     See the ciphers(1ssl) manpage for more information about the syntax of this string,
+                     and specifically for TLSv1.3 ciphersuites.
+  --raw              Use raw formatting for replies (default when STDOUT is
+                     not a tty).
+  --no-raw           Force formatted output even when STDOUT is not a tty.
+  --quoted-input     Force input to be handled as quoted strings.
+  --csv              Output in CSV format.
+  --json             Output in JSON format (default RESP3, use -2 if you want to use with RESP2).
+  --quoted-json      Same as --json, but produce ASCII-safe quoted strings, not Unicode.
+  --show-pushes <yn> Whether to print RESP3 PUSH messages.  Enabled by default when
+                     STDOUT is a tty but can be overridden with --show-pushes no.
+  --stat             Print rolling stats about server: mem, clients, ...
+  --latency          Enter a special mode continuously sampling latency.
+                     If you use this mode in an interactive session it runs
+                     forever displaying real-time stats. Otherwise if --raw or
+                     --csv is specified, or if you redirect the output to a non
+                     TTY, it samples the latency for 1 second (you can use
+                     -i to change the interval), then produces a single output
+                     and exits.
+  --latency-history  Like --latency but tracking latency changes over time.
+                     Default time interval is 15 sec. Change it using -i.
+  --latency-dist     Shows latency as a spectrum, requires xterm 256 colors.
+                     Default time interval is 1 sec. Change it using -i.
+  --lru-test <keys>  Simulate a cache workload with an 80-20 distribution.
+  --replica          Simulate a replica showing commands received from the master.
+  --rdb <filename>   Transfer an RDB dump from remote server to local file.
+                     Use filename of "-" to write to stdout.
+  --functions-rdb <filename> Like --rdb but only get the functions (not the keys)
+                     when getting the RDB dump file.
+  --pipe             Transfer raw Redis protocol from stdin to server.
+  --pipe-timeout <n> In --pipe mode, abort with error if after sending all data.
+                     no reply is received within <n> seconds.
+                     Default timeout: 30. Use 0 to wait forever.
+  --bigkeys          Sample Redis keys looking for keys with many elements (complexity).
+  --memkeys          Sample Redis keys looking for keys consuming a lot of memory.
+  --memkeys-samples <n> Sample Redis keys looking for keys consuming a lot of memory.
+                     And define number of key elements to sample
+  --hotkeys          Sample Redis keys looking for hot keys.
+                     only works when maxmemory-policy is *lfu.
+  --scan             List all keys using the SCAN command.
+  --pattern <pat>    Keys pattern when using the --scan, --bigkeys or --hotkeys
+                     options (default: *).
+  --count <count>    Count option when using the --scan, --bigkeys or --hotkeys (default: 10).
+  --quoted-pattern <pat> Same as --pattern, but the specified string can be
+                         quoted, in order to pass an otherwise non binary-safe string.
+  --intrinsic-latency <sec> Run a test to measure intrinsic system latency.
+                     The test will run for the specified amount of seconds.
+  --eval <file>      Send an EVAL command using the Lua script at <file>.
+  --ldb              Used with --eval enable the Redis Lua debugger.
+  --ldb-sync-mode    Like --ldb but uses the synchronous Lua debugger, in
+                     this mode the server is blocked and script changes are
+                     not rolled back from the server memory.
+  --cluster <command> [args...] [opts...]
+                     Cluster Manager command and arguments (see below).
+  --verbose          Verbose mode.
+  --no-auth-warning  Don't show warning message when using password on command
+                     line interface.
+  --help             Output this help and exit.
+  --version          Output version and exit.
+
+Cluster Manager Commands:
+  Use --cluster help to list all available cluster manager commands.
+
+Examples:
+  cat /etc/passwd | redis-cli -x set mypasswd
+  redis-cli -D "" --raw dump key > key.dump && redis-cli -X dump_tag restore key2 0 dump_tag replace < key.dump
+  redis-cli -r 100 lpush mylist x
+  redis-cli -r 100 -i 1 info | grep used_memory_human:
+  redis-cli --quoted-input set '"null-\x00-separated"' value
+  redis-cli --eval myscript.lua key1 key2 , arg1 arg2 arg3
+  redis-cli --scan --pattern '*:12345*'
+  redis-cli --scan --pattern '*:12345*' --count 100
+
+  (Note: when using --eval the comma separates KEYS[] from ARGV[] items)
+
+When no command is given, redis-cli starts in interactive mode.
+Type "help" in interactive mode for information on available commands
+and settings.
+
+root@redis-app-5:/data# redis-cli --cluster help
+Cluster Manager Commands:
+  create         host1:port1 ... hostN:portN
+                 --cluster-replicas <arg>
+  check          <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+  info           <host:port> or <host> <port> - separated by either colon or space
+  fix            <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-search-multiple-owners
+                 --cluster-fix-with-unreachable-masters
+  reshard        <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-from <arg>
+                 --cluster-to <arg>
+                 --cluster-slots <arg>
+                 --cluster-yes
+                 --cluster-timeout <arg>
+                 --cluster-pipeline <arg>
+                 --cluster-replace
+  rebalance      <host:port> or <host> <port> - separated by either colon or space
+                 --cluster-weight <node1=w1...nodeN=wN>
+                 --cluster-use-empty-masters
+                 --cluster-timeout <arg>
+                 --cluster-simulate
+                 --cluster-pipeline <arg>
+                 --cluster-threshold <arg>
+                 --cluster-replace
+  add-node       new_host:new_port existing_host:existing_port
+                 --cluster-slave
+                 --cluster-master-id <arg>
+  del-node       host:port node_id
+  call           host:port command arg arg .. arg
+                 --cluster-only-masters
+                 --cluster-only-replicas
+  set-timeout    host:port milliseconds
+  import         host:port
+                 --cluster-from <arg>
+                 --cluster-from-user <arg>
+                 --cluster-from-pass <arg>
+                 --cluster-from-askpass
+                 --cluster-copy
+                 --cluster-replace
+  backup         host:port backup_directory
+  help           
+
+For check, fix, reshard, del-node, set-timeout, info, rebalance, call, import, backup you can specify the host and port of any working node in the cluster.
+
+Cluster Manager Options:
+  --cluster-yes  Automatic yes to cluster commands prompts
+
+root@redis-app-5:/data# redis-cli --cluster check 10.244.0.15:6379      
+Error: invalid CLUSTER NODES reply
+(failed reverse-i-search)`cat': redis-cli --cluster create 10.244.0.15:6379 --cluster-repli^Cs 1
+root@redis-app-5:/data# cat /var/lib/redis/nodes.conf 
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee 10.244.0.15:6379@16379,,tls-port=0,shard-id=78ba6d99f36caef0a2d9a640782e90c8dc411602 myself,master - 0 0 0 connected
+vars currentEpoch 0 lastVoteEpoch 0
+root@redis-app-5:/data# redis-cli --cluster check 10.244.0.15:6379@16379
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli --cluster info 10.244.0.15:6379@16379
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli --cluster info 10.244.0.15:6379      
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli --cluster info 10.244.0.10:6379
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli --cluster info 10.244.0.11:6379
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli --cluster info 10.244.0.12:6379
+Error: invalid CLUSTER NODES reply
+root@redis-app-5:/data# redis-cli cluster nodes
+6152a0e75f8a1443304a41ebf63dced5f2ad4eee  10.244.0.15:6379@16379 myself,master - 0 0 0 connected
+root@redis-app-5:/data# 
+exit
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
+karuppiah@Karuppiahs-MacBook-Pro 1 % cat redis-cluster-local/redis-1/nodes.conf 
+01b4a30df7dece90c3799b2800055dad660160e4 127.0.0.1:6384@16384,,tls-port=0,shard-id=6c051245ecd870d5dea79b28c2d9a306a2b6b151 slave,fail e2ba0747172bf752901d554772fd68e34798a2af 1697977934616 1697977932039 3 disconnected
+e2ba0747172bf752901d554772fd68e34798a2af 127.0.0.1:6381@16381,,tls-port=0,shard-id=6c051245ecd870d5dea79b28c2d9a306a2b6b151 master - 0 1697977938722 3 connected 10923-16383
+c24fbd95fe51830b77a73beef1f96079fb4340d6 127.0.0.1:6379@16379,,tls-port=0,shard-id=91e1b8435e5dc4f6fc09a22423af29db32bb1eae myself,master - 0 1697977938000 1 connected 0-5460
+45c95e51e2b1690c42bce08f88ef08d69deedc0d 127.0.0.1:6383@16383,,tls-port=0,shard-id=4a204593f4b64fcd35c3c238c34332588b574fe3 slave 71510372f21dfb5020ca4369648c1cc5eca6b1e7 0 1697977939240 2 connected
+bf7276cbf67275148a705245174c0273c584b549 127.0.0.1:6382@16382,,tls-port=0,shard-id=91e1b8435e5dc4f6fc09a22423af29db32bb1eae slave c24fbd95fe51830b77a73beef1f96079fb4340d6 0 1697977939000 1 connected
+71510372f21dfb5020ca4369648c1cc5eca6b1e7 127.0.0.1:6380@16380,,tls-port=0,shard-id=4a204593f4b64fcd35c3c238c34332588b574fe3 master - 0 1697977939240 2 connected 5461-10922
+vars currentEpoch 6 lastVoteEpoch 0
+karuppiah@Karuppiahs-MacBook-Pro 1 % k get pod -o wide
+NAME          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+redis-app-0   1/1     Running   0          17m   10.244.0.10   minikube   <none>           <none>
+redis-app-1   1/1     Running   0          17m   10.244.0.11   minikube   <none>           <none>
+redis-app-2   1/1     Running   0          17m   10.244.0.12   minikube   <none>           <none>
+redis-app-3   1/1     Running   0          17m   10.244.0.13   minikube   <none>           <none>
+redis-app-4   1/1     Running   0          17m   10.244.0.14   minikube   <none>           <none>
+redis-app-5   1/1     Running   0          17m   10.244.0.15   minikube   <none>           <none>
+karuppiah@Karuppiahs-MacBook-Pro 1 % 
